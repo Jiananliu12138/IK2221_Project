@@ -11,6 +11,7 @@ from vllm.multimodal import MultiModalInputs
 from vllm.lora.request import LoRARequest
 from vllm.worker.model_runner_base import dump_input_when_exception
 from vllm.distributed import get_pp_group
+from vllm.entrypoints.openai.api_server import router
 
 from lmcache_vllm.vllm_adapter import (lmcache_get_config,
         init_lmcache_engine, lmcache_should_store, lmcache_should_retrieve,
@@ -522,7 +523,11 @@ def InitLMCacheEnvironment() -> None:
     # inject tokenizer in openai server
     vllm.entrypoints.openai.serving_engine.OpenAIServing._normalize_prompt_text_to_input = \
         _new_normalize_prompt_text_to_input
-    
+
+    from custom_api import extended_router
+    print(type(router))
+    router.include_router(extended_router, prefix="/v2", tags=["extended"])
+
     # Cacheblend
     if lmcache_get_config().enable_blending:
         inject_llama()
