@@ -14,13 +14,15 @@ All the processing regarding the checks for KV-cache availability, and need for 
 The engine contains a (small) local storage to keep the KV-cache data on the same server.
 This reduces the requirement for retrieving of data from the remote storage.
 
+We use the ```v0.1.4-alpha``` version of LMCache in this project.
+
 ### 2. LMCache Server ([Link][LMCache-Server])
 
 This repository contains all essential code for storing chunks of data (i.e., KVs) on a so called, remote server.
 Ideally, this repository should be deployed on a separate server and allow multiple instances of LMCache engines to fetch and store data.
 However, in this project we have only one LMCache instance and the server is co-located on the same server just for simplicity of deploying the system.
 
-### 3. LMCache vLLM Extended (current repo)
+### 3. LMCache vLLM Extended (Current Repository)
 
 This repository contains vLLM injection parts required by LMCache.
 In this project we extend this to include new APIs to serve user requests as well as a basic frontend to visualize user prompts and responses.
