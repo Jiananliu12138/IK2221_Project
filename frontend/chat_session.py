@@ -9,7 +9,7 @@ import time
 class ChatSession:
     def __init__(self, ip, port, context_separator = "###"):
         openai_api_key = "EMPTY"
-        openai_api_base = f"http://{ip}:{port}/v2"
+        openai_api_base = f"http://{ip}:{port}/v1"
 
         self.client = client = OpenAI(
             # defaults to os.environ.get("OPENAI_API_KEY")
@@ -18,6 +18,7 @@ class ChatSession:
         )
 
         models = client.models.list()
+        print(models)
         self.model = models.data[0].id
 
         self.messages = []
