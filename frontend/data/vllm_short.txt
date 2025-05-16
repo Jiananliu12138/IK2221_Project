@@ -1,0 +1,11 @@
+Efficient Memory Management for Large Language Model Serving with PagedAttention  
+Authors: Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody Hao Yu, Joseph E. Gonzalez, Hao Zhang, Ion Stoica
+
+[1mAbstract[0m  
+vLLM introduces PagedAttention, a novel attention mechanism inspired by virtual memory paging, enabling efficient key-value (KV) cache management for large language model (LLM) serving. This allows for near-zero memory waste and flexible KV cache sharing. Built atop PagedAttention, vLLM achieves up to 4× throughput improvements over FasterTransformer and Orca, especially with large models and complex decoding.
+
+[1m1. Introduction[0m  
+LLM serving is costly and memory-bound. The main bottleneck is managing dynamic KV caches. Existing systems allocate contiguous memory, resulting in internal and external fragmentation. vLLM proposes PagedAttention to manage KV cache more like OS paging, improving batching and reducing cost.
+
+[1m10. Conclusion[0m  
+vLLM introduces paging-inspired memory management to LLM serving. PagedAttention enables non-contiguous memory allocation and KV sharing, leading to substantial throughput improvements.

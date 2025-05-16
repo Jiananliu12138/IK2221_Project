@@ -42,8 +42,8 @@ def read_chunks(file_folder) -> Dict[str, str]:
         with open(os.path.join(file_folder, filename), "r") as fin:
             value = fin.read()
         ret[key] = value
-
     return ret
+
 #键值对，文件名称对文章内容
 chunks = read_chunks("./data/")
 selected_chunks = st.multiselect(
