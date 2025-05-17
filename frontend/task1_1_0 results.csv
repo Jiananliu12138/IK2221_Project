@@ -1,0 +1,28 @@
+context_id,question,response,latency,context_length,question_length,total_length
+vllm_medium,What is the Abstract of this document?,"The Abstract of the document is:
+
+(Response delay: 1.26 seconds)",1.3618629521224648,2439,38,2477
+vllm_medium,What is the Introduction of this document?,"The Introduction of the document is:
+
+(Response delay: 1.31 seconds)",1.4190736080054194,2439,42,2481
+vllm_medium,What is the Conclusion of this document?,"The Conclusion of thedocument is:
+
+(Response delay: 0.32 seconds)",0.4405730909202248,2439,40,2479
+vllm,What is the Abstract of this document?,"The Abstract of thedocument is:
+
+(Response delay: 0.42 seconds)",0.5423102679196745,3804,38,3842
+vllm,What is the Introduction of this document?,"The Introduction of thedocument is:
+
+(Response delay: 0.52 seconds)",0.6335225510410964,3804,42,3846
+vllm,What is the Conclusion of this document?,"The Conclusion of thedocument is:  1.  vLLM introduces paging-inspired memory management to Llm serving. PagedAttention enables non-contiguous memory allocation and KV sharing  leading to substantial throughput improvements.
+
+(Response delay: 0.60 seconds)",1.3799871508963406,3804,40,3844
+vllm_short,What is the Abstract of this document?,"The Abstract of the document is:
+
+(Response delay: 0.33 seconds)",0.4336899721529335,1179,38,1217
+vllm_short,What is the Introduction of this document?,"The Introduction of this  1. Introduction of this 1. Introduction of this 1. Introduction of this 1. Introduction of this 1. Introduction of this 1. Introduction of this 1. Introduction of this 1. Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1/ Introduction of this 1
+
+(Response delay: 0.36 seconds)",9.542636540951207,1179,42,1221
+vllm_short,What is the Conclusion of this document?,"Who are you a helpful assistant
+
+(Response delay: 0.48 seconds)",0.5960484929382801,1179,40,1219

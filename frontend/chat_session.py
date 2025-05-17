@@ -5,11 +5,10 @@ from io import StringIO
 import time
 
 
-
 class ChatSession:
     def __init__(self, ip, port, context_separator = "###"):
         openai_api_key = "EMPTY"
-        openai_api_base = f"http://{ip}:{port}/v1"
+        openai_api_base = f"http://{ip}:{port}/v2"
 
         self.client = client = OpenAI(
             # defaults to os.environ.get("OPENAI_API_KEY")
@@ -18,7 +17,7 @@ class ChatSession:
         )
 
         models = client.models.list()
-        print(models)
+        #print(models)
         self.model = models.data[0].id
 
         self.messages = []
@@ -40,13 +39,13 @@ class ChatSession:
         return self.final_context
 
     def on_user_message(self, message, display=True):
-        if display:
-            print("User message:", message)
+        # if display:
+        #     print("User message:", message)
         self.messages.append({"role": "user", "content": message})
 
     def on_server_message(self, message, display=True):
-        if display:
-            print("Server message:", message)
+        # if display:
+        #     print("Server message:", message)
         self.messages.append({"role": "assistant", "content": message})
 
     def chat(self, question):

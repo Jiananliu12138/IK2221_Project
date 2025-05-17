@@ -53,7 +53,7 @@ for repeat in range(2):
             continue
         end = time.perf_counter()
         latency = end - start
-        results.append({
+        result = {
             "context_id": req["context_id"],
             "question": req["question"],
             "response": response,
@@ -61,17 +61,29 @@ for repeat in range(2):
             "context_length": len(req["context"]),
             "question_length": len(req["question"]),
             "total_length": len(req["context"]) + len(req["question"])
-        })
+        }
+        results.append(result)
+        print("="*40)
+        print(f"Repeat: {repeat}")
+        print(f"Context ID: {result['context_id']}")
+        print(f"Question: {result['question']}")
+        print(f"Response: {result['response'][:20]}...")
+        print(f"Latency: {result['latency']:.3f} s")
+        print(f"Context Length: {result['context_length']}")
+        print(f"Question Length: {result['question_length']}")
+        print(f"Total Length: {result['total_length']}")
+        print(f"Throughput: {1/result['latency']:.2f} req/s")
+        print("="*40)
 
     df = pd.DataFrame(results)
-    df.to_csv("task1_1_{repeat} results.csv", index=False)
+    df.to_csv(f"task1_1_{repeat} results.csv", index=False)
 
     df_short = df[df["context_id"] == "vllm_short"]
     df_medium = df[df["context_id"] == "vllm_medium"]
     df_long = df[df["context_id"] == "vllm"]
-    grouped_short = df_short.groupby("total_length")["latency"].mean().reset_index()
-    grouped_medium = df_medium.groupby("total_length")["latency"].mean().reset_index()
-    grouped_long = df_long.groupby("total_length")["latency"].mean().reset_index()
+    grouped_short = df_short.groupby("context_id")[["latency", "total_length"]].mean().reset_index()
+    grouped_medium = df_short.groupby("context_id")[["latency", "total_length"]].mean().reset_index()
+    grouped_long = df_short.groupby("context_id")[["latency", "total_length"]].mean().reset_index()
 
     plt.figure(figsize=(8, 5))
     plt.plot(grouped_short["total_length"], grouped_short["latency"], marker='o', label="vllm_short")
@@ -84,4 +96,5 @@ for repeat in range(2):
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+    plt.savefig(f"task1_1_{repeat}_plot.png")
 
