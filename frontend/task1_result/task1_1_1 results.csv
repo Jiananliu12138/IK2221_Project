@@ -1,0 +1,46 @@
+context_id,question,response,latency,context_length,question_length,total_length
+vllm_medium,What is the Abstract of this document?,"  1. 1. 4× perform
+
+(Response delay: 0.89 seconds)",1.1018791180104017,2834,38,2872
+vllm_medium,What is the Introduction of this document?," 1. 1. 4× 4× transformative changes
+
+(Response delay: 0.93 seconds)",1.1909242009278387,2834,42,2876
+vllm_medium,What is the Conclusion of this document?," 1. 1. 4× implementing- cod. 4× 4× 4× 4× 4× 4× 4× 4× 4× 4× 4× 2010. 0m  
+
+(Response delay: 1.03 seconds)",2.086025992874056,2834,40,2874
+vllm_medium,What is the Background of this document?,"a
+
+(Response delay: 1.05 seconds)",1.0630558331031352,2834,40,2874
+vllm_medium,What is the KV Cache Manager?," 1. 1- 4× 4× 4× 4× 2010
+
+(Response delay: 1.20 seconds)",1.6553669129498303,2834,29,2863
+vllm,What is the Abstract of this document?,"A
+
+(Response delay: 1.26 seconds)",1.2752791941165924,3804,38,3842
+vllm,What is the Introduction of this document?,"A
+
+(Response delay: 1.42 seconds)",1.432297262828797,3804,42,3846
+vllm,What is the Conclusion of this document?,"A
+
+(Response delay: 1.62 seconds)",1.628986031981185,3804,40,3844
+vllm,What is the Background of this document?,"A
+
+(Response delay: 1.69 seconds)",1.7066953592002392,3804,40,3844
+vllm,What is the KV Cache Manager?,"A
+
+(Response delay: 1.74 seconds)",1.7622201179619879,3804,29,3833
+vllm_short,What is the Abstract of this document?,"A
+
+(Response delay: 1.39 seconds)",1.4010264149401337,1598,38,1636
+vllm_short,What is the Introduction of this document?,"A
+
+(Response delay: 1.64 seconds)",1.6563020821195096,1598,42,1640
+vllm_short,What is the Conclusion of this document?,"A
+
+(Response delay: 1.38 seconds)",1.393197052879259,1598,40,1638
+vllm_short,What is the Background of this document?,"A
+
+(Response delay: 1.63 seconds)",1.6433727040421218,1598,40,1638
+vllm_short,What is the KV Cache Manager?,"A
+
+(Response delay: 1.54 seconds)",1.5484267349820584,1598,29,1627

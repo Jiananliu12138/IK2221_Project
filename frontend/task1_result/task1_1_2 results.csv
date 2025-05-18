@@ -1,0 +1,46 @@
+context_id,question,response,latency,context_length,question_length,total_length
+vllm_medium,What is the Abstract of this document?,"A
+
+(Response delay: 1.70 seconds)",1.714727931888774,2834,38,2872
+vllm,What is the Background of this document?,"A
+
+(Response delay: 2.30 seconds)",2.3491600130219012,3804,40,3844
+vllm_medium,What is the Conclusion of this document?,"A
+
+(Response delay: 2.00 seconds)",2.0176353419665247,2834,40,2874
+vllm_medium,What is the Introduction of this document?,"A
+
+(Response delay: 1.88 seconds)",1.896444534882903,2834,42,2876
+vllm_short,What is the Conclusion of this document?,"A
+
+(Response delay: 1.85 seconds)",1.8651710031554103,1598,40,1638
+vllm_short,What is the KV Cache Manager?,"A
+
+(Response delay: 1.98 seconds)",1.9901213580742478,1598,29,1627
+vllm_medium,What is the KV Cache Manager?,"A
+
+(Response delay: 2.03 seconds)",2.0492716489825398,2834,29,2863
+vllm_short,What is the Abstract of this document?,"A
+
+(Response delay: 2.02 seconds)",2.0345647449139506,1598,38,1636
+vllm_short,What is the Background of this document?,"A
+
+(Response delay: 1.84 seconds)",1.8554603420197964,1598,40,1638
+vllm,What is the Abstract of this document?,"A
+
+(Response delay: 2.46 seconds)",2.48217633808963,3804,38,3842
+vllm,What is the Conclusion of this document?,"A
+
+(Response delay: 2.65 seconds)",2.663558510830626,3804,40,3844
+vllm,What is the KV Cache Manager?,"A
+
+(Response delay: 2.65 seconds)",2.6619045969564468,3804,29,3833
+vllm,What is the Introduction of this document?,"A
+
+(Response delay: 2.44 seconds)",2.455846779048443,3804,42,3846
+vllm_medium,What is the Background of this document?,"A
+
+(Response delay: 2.55 seconds)",2.57199893402867,2834,40,2874
+vllm_short,What is the Introduction of this document?,"A
+
+(Response delay: 2.19 seconds)",2.2073896089568734,1598,42,1640

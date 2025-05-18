@@ -1,0 +1,46 @@
+context_id,question,response,latency,context_length,question_length,total_length
+vllm_medium,What is the Abstract of this document?,"The Abstract of the document is:
+
+(Response delay: 1.39 seconds)",1.4924320918507874,2834,38,2872
+vllm_medium,What is the Introduction of this document?,"The Introduction of the document is:
+
+(Response delay: 1.37 seconds)",1.4953675211872905,2834,42,2876
+vllm_medium,What is the Conclusion of this document?,"The Conclusion of thedocument is:
+
+(Response delay: 0.42 seconds)",0.5450891209766269,2834,40,2874
+vllm_medium,What is the Background of this document?,"The Background of thedocument is:
+
+(Response delay: 0.40 seconds)",0.5136806978844106,2834,40,2874
+vllm_medium,What is the KV Cache Manager?,"The KV Cache Manager in the context of the reference text is the entity that manages the key-value (KV) cache, the memory management for large language model (LLM) serving. It helps to manage the division of the key-value pairs (KVPs) into small, fixed-size blocks and ensures the efficient and optimized allocation of these KV blocks.
+
+(Response delay: 0.37 seconds)",1.5837723759468645,2834,29,2863
+vllm,What is the Abstract of this document?,"The Abstract of thedocument is:
+
+(Response delay: 0.50 seconds)",0.6323981971945614,3804,38,3842
+vllm,What is the Introduction of this document?,"The Introduction of this document is:
+
+(Response delay: 0.62 seconds)",0.7347083021886647,3804,42,3846
+vllm,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you a document and please answer my question afterwards based on the content in document.###Efficient Memory Management for Large Language Model Serving with PagedAttention
+
+(Response delay: 0.65 seconds)",1.3767699599266052,3804,40,3844
+vllm,What is the Background of this document?,"You are a helpful assistant. I will now give you adocument 作者
+
+(Response delay: 0.60 seconds)",0.8902263790369034,3804,40,3844
+vllm,What is the KV Cache Manager?,"You are a helpful assistant. I will now give you adocument 作者
+
+(Response delay: 0.71 seconds)",1.0161291561089456,3804,29,3833
+vllm_short,What is the Abstract of this document?,"You are a helpful assistant. I will now give you a document 作者
+
+(Response delay: 0.79 seconds)",1.0506837179418653,1598,38,1636
+vllm_short,What is the Introduction of this document?,"You are a helpful assistant. I will now give you a a document 作者
+
+(Response delay: 0.58 seconds)",0.8612417520489544,1598,42,1640
+vllm_short,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you a a document 作者
+
+(Response delay: 0.62 seconds)",0.9083439200185239,1598,40,1638
+vllm_short,What is the Background of this document?,"You are a helping you a a document 作者
+
+(Response delay: 0.67 seconds)",0.8508727909065783,1598,40,1638
+vllm_short,What is the KV Cache Manager?,"You are a helping you a adocument 作者
+
+(Response delay: 0.65 seconds)",0.8302055289968848,1598,29,1627

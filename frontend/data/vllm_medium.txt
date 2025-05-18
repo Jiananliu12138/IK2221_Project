@@ -26,6 +26,13 @@ Implements FCFS scheduling and preemption strategies using block eviction. Suppo
 [1m4.6 Distributed Execution[0m  
 vLLM supports model parallelism (e.g., Megatron-LM) by using a centralized KV cache manager and SPMD logic.
 
+[1m5. Implementation[0m  
+Implemented using FastAPI and PyTorch with custom CUDA kernels. Supports various LLMs (GPT, OPT, LLaMA). Memory access is fused with attention computation for efficiency.
+
+[1m6. Evaluation[0m  
+vLLM achieves 2–4× throughput vs. FasterTransformer/Orca. Outperforms in basic, parallel, beam, and shared prefix decoding. Key findings:
+- Handles more batched requests
+
 [1m8. Discussion[0m  
 PagedAttention may not apply to compute-bound workloads, but is ideal for memory-bound LLM serving. Its kernel fusion techniques make the overhead manageable.
 

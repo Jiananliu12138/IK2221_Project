@@ -1,0 +1,7 @@
+context_id,question,response,latency,context_length,question_length,total_length
+vllm_medium,What is the Background of this document?,"A
+
+(Response delay: 2.33 seconds)",2.344675760017708,2834,40,2874
+vllm_medium,What is the Conclusion of this document?,"A
+
+(Response delay: 2.41 seconds)",2.4312173980288208,2834,40,2874
