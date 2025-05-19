@@ -1,46 +1,46 @@
 context_id,question,response,latency,context_length,question_length,total_length
-vllm_medium,What is the Abstract of this document?,"A
+vllm,What is the Background of this document?,"The Background section of the document covers the challenges faced by large language model (LLM) serving and the role of key-value (KV) caches in autoregressive generation. It also discusses batching challenges and the need for efficient memory management.
 
-(Response delay: 1.70 seconds)",1.714727931888774,2834,38,2872
-vllm,What is the Background of this document?,"A
+(Response delay: 1.33 seconds)",2.1362354068551213,3804,40,3844
+vllm_short,What is the Background of this document?,"Got it!
 
-(Response delay: 2.30 seconds)",2.3491600130219012,3804,40,3844
-vllm_medium,What is the Conclusion of this document?,"A
+(Response delay: 1.28 seconds)",1.3261513959150761,1598,40,1638
+vllm_medium,What is the Abstract of this document?,"Got it!
 
-(Response delay: 2.00 seconds)",2.0176353419665247,2834,40,2874
-vllm_medium,What is the Introduction of this document?,"A
+(Response delay: 0.38 seconds)",0.44875265192240477,2834,38,2872
+vllm_short,What is the KV Cache Manager?,"It is a system that manages memory for large language model (LLM) serving.
 
-(Response delay: 1.88 seconds)",1.896444534882903,2834,42,2876
-vllm_short,What is the Conclusion of this document?,"A
+(Response delay: 0.37 seconds)",0.6491879120003432,1598,29,1627
+vllm_medium,What is the Conclusion of this document?,"The is a helpful assistant.．.．.．
 
-(Response delay: 1.85 seconds)",1.8651710031554103,1598,40,1638
-vllm_short,What is the KV Cache Manager?,"A
+(Response delay: 0.37 seconds)",0.5758723840117455,2834,40,2874
+vllm_short,What is the Introduction of this document?,".the is a helpful assistant. I will now give you a document and please answer my question afterwards based on the content indocument.###Efficient Memory Management for Large Language Model Serving with PagedAttention
 
-(Response delay: 1.98 seconds)",1.9901213580742478,1598,29,1627
-vllm_medium,What is the KV Cache Manager?,"A
+(Response delay: 0.30 seconds)",0.9763205531053245,1598,42,1640
+vllm_short,What is the Conclusion of this document?,".How is the Conclusion of thisdocument.  
 
-(Response delay: 2.03 seconds)",2.0492716489825398,2834,29,2863
-vllm_short,What is the Abstract of this document?,"A
+(Response delay: 0.30 seconds)",0.4263347079977393,1598,40,1638
+vllm,What is the Abstract of this document?,".How is the Abstract of thisdocument.!
 
-(Response delay: 2.02 seconds)",2.0345647449139506,1598,38,1636
-vllm_short,What is the Background of this document?,"A
+(Response delay: 0.49 seconds)",0.6535300158429891,3804,38,3842
+vllm_medium,What is the Background of this document?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the content in document.###Efficient Memory Management for Large language model (LLM serving. PagedAttention is ideal for memory-bound Lll serving. it is ideal for memory-bound Llm serving. PagedAttention is ideal for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large 语言叡
 
-(Response delay: 1.84 seconds)",1.8554603420197964,1598,40,1638
-vllm,What is the Abstract of this document?,"A
+(Response delay: 0.55 seconds)",10.068644388811663,2834,40,2874
+vllm_medium,What is the Introduction of this document?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the content indocument.###Efficient Memory Management for Large Language Model Serving with PagedAttention is ideal for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large language model serving. PagedAttention is feasible for memory-bound work of a large 语言叐臾
 
-(Response delay: 2.46 seconds)",2.48217633808963,3804,38,3842
-vllm,What is the Conclusion of this document?,"A
+(Response delay: 0.64 seconds)",2.21691477810964,2834,42,2876
+vllm_medium,What is the KV Cache Manager?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the content indocument.###Efficient Memory Management for Large language model Serving with PagedAttention is ideal for memory-bound work of a large language model Serving with PagedAttention is feasible for memory-bound work of a large language model Serving with PagedAttention is feasible for memory-bound work of a large language model Serving with PagedAttention is feasible for memory-bound work of a large 语言叐opr
 
-(Response delay: 2.65 seconds)",2.663558510830626,3804,40,3844
-vllm,What is the KV Cache Manager?,"A
+(Response delay: 0.54 seconds)",2.3886623680591583,2834,29,2863
+vllm,What is the Introduction of this document?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the codel 语言叐opr
 
-(Response delay: 2.65 seconds)",2.6619045969564468,3804,29,3833
-vllm,What is the Introduction of this document?,"A
+(Response delay: 0.85 seconds)",1.414593432098627,3804,42,3846
+vllm_short,What is the Abstract of this document?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the cต 语言叐opr
 
-(Response delay: 2.44 seconds)",2.455846779048443,3804,42,3846
-vllm_medium,What is the Background of this document?,"A
+(Response delay: 0.64 seconds)",1.1607560249976814,1598,38,1636
+vllm,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the cต 语言叐opr
 
-(Response delay: 2.55 seconds)",2.57199893402867,2834,40,2874
-vllm_short,What is the Introduction of this document?,"A
+(Response delay: 0.99 seconds)",1.5572243540082127,3804,40,3844
+vllm,What is the KV Cache Manager?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the cต 语言叐opr
 
-(Response delay: 2.19 seconds)",2.2073896089568734,1598,42,1640
+(Response delay: 0.94 seconds)",1.4995330078527331,3804,29,3833

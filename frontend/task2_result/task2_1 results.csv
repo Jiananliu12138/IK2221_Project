@@ -1,0 +1,46 @@
+context_id,question,response,latency,context_length,question_length,total_length
+vllm_medium,What is the Abstract of this document?,"The Abstract of the document is:
+
+(Response delay: 1.44 seconds)",1.5483797600027174,2834,38,2872
+vllm_medium,What is the Conclusion of this document?,"The Conclusion of the document is:
+
+(Response delay: 1.40 seconds)",1.5155935061629862,2834,40,2874
+vllm_medium,What is the Background of this document?,"The Background of the document is:
+
+(Response delay: 0.43 seconds)",0.5353243290446699,2834,40,2874
+vllm_short,What is the Abstract of this document?,"The Abstract of thedocument is:
+
+(Response delay: 0.34 seconds)",0.43597652902826667,1598,38,1636
+vllm,What is the KV Cache Manager?,"The Background of the document is:
+
+(Response delay: 0.42 seconds)",0.5336055839434266,3804,29,3833
+vllm,What is the Conclusion of this document?,"The Background of the document is:
+
+(Response delay: 0.59 seconds)",0.7075174888595939,3804,40,3844
+vllm,What is the Abstract of this document?,"The Background of the document is:
+
+(Response delay: 0.59 seconds)",0.7096657711081207,3804,38,3842
+vllm_short,What is the Background of this document?,"The Background of thedocument
+
+(Response delay: 0.43 seconds)",0.5086912529077381,1598,40,1638
+vllm_short,What is the Introduction of this document?,"The B. 10. Background of the document
+
+(Response delay: 0.39 seconds)",0.5834461320191622,1598,42,1640
+vllm_medium,What is the KV Cache Manager?,"The Background of thedocument
+
+(Response delay: 0.47 seconds)",0.5708947030361742,2834,29,2863
+vllm,What is the Background of this document?,"The Background of this portion
+
+(Response delay: 0.56 seconds)",0.6685785627923906,3804,40,3844
+vllm,What is the Introduction of this document?,"The definitively optimized CLS  10. Background: this 0
+
+(Response delay: 0.76 seconds)",1.083647480001673,3804,42,3846
+vllm_medium,What is the Introduction of this document?,"The Background of thedocument
+
+(Response delay: 0.60 seconds)",0.7020951288286597,2834,42,2876
+vllm_short,What is the Conclusion of this document?,"The Background of thedocument
+
+(Response delay: 0.50 seconds)",0.5879178051836789,1598,40,1638
+vllm_short,What is the KV Cache Manager?,"The Background of the document?5
+
+(Response delay: 0.50 seconds)",0.6159005360677838,1598,29,1627

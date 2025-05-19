@@ -1,46 +1,46 @@
 context_id,question,response,latency,context_length,question_length,total_length
 vllm_medium,What is the Abstract of this document?,"The Abstract of the document is:
 
-(Response delay: 1.39 seconds)",1.4924320918507874,2834,38,2872
-vllm_medium,What is the Introduction of this document?,"The Introduction of the document is:
+(Response delay: 1.16 seconds)",1.2737227608449757,2834,38,2872
+vllm_medium,What is the Introduction of this document?,"The Introduction of the document states that LLM serving is costly and memory-bound, with the main bottleneck being the management of dynamic key-value (KV) caches. Current systems allocate contiguous memory, leading to internal and external fragmentation. The document proposes PagedAttention, a novel attention mechanism inspired by virtual memory paging, to manage KV cache more like OS paging, improving batching and reducing cost. This allows for near-zero memory waste and flexible KV cache sharing, leading to substantial throughput improvements over existing systems.
 
-(Response delay: 1.37 seconds)",1.4953675211872905,2834,42,2876
-vllm_medium,What is the Conclusion of this document?,"The Conclusion of thedocument is:
+(Response delay: 1.41 seconds)",3.0671790859196335,2834,42,2876
+vllm_medium,What is the Conclusion of this document?,"The Conclusion of the document states that vLLM introduces paging-inspired memory management to LLM serving. PagedAttention enables non-contiguous memory allocation and KV sharing, leading to substantial throughput improvements.
 
-(Response delay: 0.42 seconds)",0.5450891209766269,2834,40,2874
-vllm_medium,What is the Background of this document?,"The Background of thedocument is:
+(Response delay: 0.32 seconds)",0.9803920730482787,2834,40,2874
+vllm_medium,What is the Background of this document?,"The Background of the document states that Transformers, KV cache role in autoregressive generation and batching challenges. B) must handle asynchronous arrivals and sequence length variance. Iteration-level scheduling helps reduce queueing and padding inefficiencies.
 
-(Response delay: 0.40 seconds)",0.5136806978844106,2834,40,2874
-vllm_medium,What is the KV Cache Manager?,"The KV Cache Manager in the context of the reference text is the entity that manages the key-value (KV) cache, the memory management for large language model (LLM) serving. It helps to manage the division of the key-value pairs (KVPs) into small, fixed-size blocks and ensures the efficient and optimized allocation of these KV blocks.
+(Response delay: 0.34 seconds)",1.1018086748663336,2834,40,2874
+vllm_medium,What is the KV Cache Manager?,"The KV Cache Manager is a key component in the caching layer of a caching system, refers to the management of the key-value (KV) cache. It handles the allocation process for KV caches, ensures efficient KV cache management.
 
-(Response delay: 0.37 seconds)",1.5837723759468645,2834,29,2863
-vllm,What is the Abstract of this document?,"The Abstract of thedocument is:
+(Response delay: 0.37 seconds)",1.1318603400141,2834,29,2863
+vllm,What is the Abstract of this document?,"The Abstract of the document is:
 
-(Response delay: 0.50 seconds)",0.6323981971945614,3804,38,3842
-vllm,What is the Introduction of this document?,"The Introduction of this document is:
+(Response delay: 0.45 seconds)",0.5568236901890486,3804,38,3842
+vllm,What is the Introduction of this document?,"The Introduction of thedocument is: 
 
-(Response delay: 0.62 seconds)",0.7347083021886647,3804,42,3846
-vllm,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you a document and please answer my question afterwards based on the content in document.###Efficient Memory Management for Large Language Model Serving with PagedAttention
+(Response delay: 0.62 seconds)",0.7787211530376226,3804,42,3846
+vllm,What is the Conclusion of this document?,"The Conclusion of thedocument is: 
 
-(Response delay: 0.65 seconds)",1.3767699599266052,3804,40,3844
-vllm,What is the Background of this document?,"You are a helpful assistant. I will now give you adocument 作者
+(Response delay: 0.54 seconds)",0.691051083849743,3804,40,3844
+vllm,What is the Background of this document?,"The Background of the document is: 
 
-(Response delay: 0.60 seconds)",0.8902263790369034,3804,40,3844
-vllm,What is the KV Cache Manager?,"You are a helpful assistant. I will now give you adocument 作者
+(Response delay: 0.59 seconds)",0.7389145810157061,3804,40,3844
+vllm,What is the KV Cache Manager?,"The KV Cache Manager is a key component in the caching system, manages the memory usage of the cache.
 
-(Response delay: 0.71 seconds)",1.0161291561089456,3804,29,3833
-vllm_short,What is the Abstract of this document?,"You are a helpful assistant. I will now give you a document 作者
+(Response delay: 0.72 seconds)",1.127243951894343,3804,29,3833
+vllm_short,What is the Abstract of this document?,"The Abstract of thedocument is: 
 
-(Response delay: 0.79 seconds)",1.0506837179418653,1598,38,1636
-vllm_short,What is the Introduction of this document?,"You are a helpful assistant. I will now give you a a document 作者
+(Response delay: 0.81 seconds)",0.9279183729086071,1598,38,1636
+vllm_short,What is the Introduction of this document?,"The Introduction of the document is: 
 
-(Response delay: 0.58 seconds)",0.8612417520489544,1598,42,1640
-vllm_short,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you a a document 作者
+(Response delay: 0.53 seconds)",0.6507238980848342,1598,42,1640
+vllm_short,What is the Conclusion of this document?,"This is a translation of the document: 1× throughput reduction alpha
 
-(Response delay: 0.62 seconds)",0.9083439200185239,1598,40,1638
-vllm_short,What is the Background of this document?,"You are a helping you a a document 作者
+(Response delay: 0.68 seconds)",0.9418768649920821,1598,40,1638
+vllm_short,What is the Background of this document?,"This is a translation of thedomaineю
 
-(Response delay: 0.67 seconds)",0.8508727909065783,1598,40,1638
-vllm_short,What is the KV Cache Manager?,"You are a helping you a adocument 作者
+(Response delay: 0.59 seconds)",0.7483040040824562,1598,40,1638
+vllm_short,What is the KV Cache Manager?,"Who were is a translation of the document: 1× CP0
 
-(Response delay: 0.65 seconds)",0.8302055289968848,1598,29,1627
+(Response delay: 0.69 seconds)",0.9555757099296898,1598,29,1627

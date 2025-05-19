@@ -1,7 +1,46 @@
 context_id,question,response,latency,context_length,question_length,total_length
-vllm_medium,What is the Background of this document?,"A
+vllm_medium,What is the Abstract of this document?,"You are a helpful assistant. 1
 
-(Response delay: 2.33 seconds)",2.344675760017708,2834,40,2874
-vllm_medium,What is the Conclusion of this document?,"A
+(Response delay: 0.88 seconds)",1.0312712420709431,2834,38,2872
+vllm_medium,What is the Conclusion of this document?,"You are a helpful assistant. 1
 
-(Response delay: 2.41 seconds)",2.4312173980288208,2834,40,2874
+(Response delay: 1.02 seconds)",1.1882556229829788,2834,40,2874
+vllm_short,What is the Background of this document?,"You are a helpful assistant. I will now give you adocument and please answer my question afterwards based on the cต 语言叐opr
+
+(Response delay: 0.99 seconds)",1.535084166098386,1598,40,1638
+vllm_short,What is the Abstract of this document?,"You are a helpful assistant. I will now give you adocument on the flight or
+
+(Response delay: 0.90 seconds)",1.2123042328748852,1598,38,1636
+vllm_short,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you adocument on the flight or
+
+(Response delay: 1.07 seconds)",1.388047861168161,1598,40,1638
+vllm,What is the Introduction of this document?,"You are a helpful assistant. I will now give you adocument on the flight/  
+
+(Response delay: 1.29 seconds)",1.6544876338448375,3804,42,3846
+vllm_short,What is the Introduction of this document?,"You are a helpful assistant. I will now give you adocument on the flight/ 16% in the meantime with 20% after Larry APT. 1
+
+(Response delay: 1.08 seconds)",1.7810338700655848,1598,42,1640
+vllm,What is the Conclusion of this document?,"You are a helpful assistant. I will now give you adocument on the fly/ 16% in the meantime with 20% during the 1
+
+(Response delay: 1.40 seconds)",2.096216255100444,3804,40,3844
+vllm,What is the KV Cache Manager?,"You are a helpful assistant. I will now give you adocument on the fly/ 16% and proceeding as recovery mechanisms.
+
+(Response delay: 1.55 seconds)",2.101564782904461,3804,29,3833
+vllm_medium,What is the Background of this document?,"You are a helpful assistant. I will now give you adocument on the fly/ 16/ 1
+
+(Response delay: 1.43 seconds)",1.8982760231010616,2834,40,2874
+vllm_medium,What is the Introduction of this document?,"You are a harmfulerated by produced by fixed-size blocks (KV) deactivate the flight/ 16% in the 1
+
+(Response delay: 1.46 seconds)",2.0153532000258565,2834,42,2876
+vllm_medium,What is the KV Cache Manager?,"Yourassistant
+
+(Response delay: 1.49 seconds)",1.551516893086955,2834,29,2863
+vllm,What is the Abstract of this document?,"The is averted yan HSKCS671467: 1
+
+(Response delay: 1.76 seconds)",2.138720019022003,3804,38,3842
+vllm,What is the Background of this document?,"The is a targeting very directly and proactive
+
+(Response delay: 1.96 seconds)",2.1653011851012707,3804,40,3844
+vllm_short,What is the KV Cache Manager?,"The is a targeting very directly and single polling 0001968: 1
+
+(Response delay: 1.53 seconds)",1.9454870531335473,1598,29,1627

@@ -1,7 +1,8 @@
 import os
 import random
 from typing import List, Dict
-
+from collections import defaultdict
+#task1
 def read_chunks(file_folder) -> Dict[str, str]:
     """
     Read all the txt files in the folder and return the filenames and value pairs
@@ -41,3 +42,27 @@ def generate_requests_shuffle(contexts: Dict[str, str], questions: List[str]):
     random.shuffle(requests)
     for req in requests:
         yield req
+
+#task2
+def generate_batches(contexts, questions, batch_size):
+    requests = []
+    for ctx_id, ctx in contexts.items():
+        for q in questions:
+            requests.append({
+                "context_id": ctx_id,
+                "context": ctx,
+                "question": q
+            })
+    # 按 batch_size 分组
+    random.shuffle(requests)
+    for i in range(0, len(requests), batch_size):
+        yield requests[i:i+batch_size]
+
+def scheduler(batch):
+    groups = defaultdict(list)
+    for req in batch:
+        groups[req["context_id"]].append(req)
+    ordered = []
+    for group in groups.values():
+        ordered.extend(group)
+    return ordered

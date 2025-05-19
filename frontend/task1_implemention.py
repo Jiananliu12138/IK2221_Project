@@ -23,7 +23,7 @@ tokenizer = get_tokenizer()
 
 model = get_model().eval()
 #所有文章键值对
-chunks = read_chunks("./data/")
+chunks = read_chunks("./data_12/")
 
 session = chat_session.ChatSession(IP1, PORT1)
 
