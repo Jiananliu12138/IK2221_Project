@@ -5,7 +5,6 @@ from io import StringIO
 import time
 
 
-
 class ChatSession:
     def __init__(self, ip, port, context_separator = "###"):
         openai_api_key = "EMPTY"
@@ -18,6 +17,7 @@ class ChatSession:
         )
 
         models = client.models.list()
+        #print(models)
         self.model = models.data[0].id
 
         self.messages = []
@@ -27,6 +27,11 @@ class ChatSession:
 
 
     def set_context(self, context_strings):
+        # Keep only the most recent 4 messages (2 exchanges) to prevent context length from growing too large
+        # while still preserving some history for KV cache
+        if len(self.messages) > 10:
+            self.messages = self.messages[-4:]
+        
         contexts = []
         for context in context_strings:
             contexts.append(context)
@@ -39,13 +44,13 @@ class ChatSession:
         return self.final_context
 
     def on_user_message(self, message, display=True):
-        if display:
-            print("User message:", message)
+        # if display:
+        #     print("User message:", message)
         self.messages.append({"role": "user", "content": message})
 
     def on_server_message(self, message, display=True):
-        if display:
-            print("Server message:", message)
+        # if display:
+        #     print("Server message:", message)
         self.messages.append({"role": "assistant", "content": message})
 
     def chat(self, question):

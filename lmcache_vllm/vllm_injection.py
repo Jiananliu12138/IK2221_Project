@@ -497,13 +497,13 @@ def InitLMCacheEnvironment() -> None:
     #global original_llm_engine_init
     #original_llm_engine_init = vllm.engine.llm_engine.LLMEngine.__init__
     #vllm.engine.llm_engine.LLMEngine.__init__ = new_llm_engine_init
-    
+
     import vllm.worker.model_runner 
     vllm.worker.model_runner.ModelRunner.execute_model = new_execute_model
 
     import vllm.engine.async_llm_engine
     vllm.engine.async_llm_engine._log_task_completion = new_log_task_completion
-    
+
     import vllm.worker.model_runner
     global original_prepare_model_input
     original_prepare_model_input = vllm.worker.model_runner.ModelRunner.prepare_model_input
@@ -515,12 +515,12 @@ def InitLMCacheEnvironment() -> None:
 
     import vllm.core.scheduler
     vllm.core.scheduler.Scheduler._free_finished_seqs = new_free_finished_seqs
-    
+
     import vllm
     vllm.inputs.preprocess.InputPreprocessor._tokenize_prompt = _new_tokenize_prompt
     vllm.inputs.preprocess.InputPreprocessor._tokenize_prompt_async = _new_tokenize_prompt_async
     
-    # inject tokenizer in openai server
+    # inject tokenizer in openai server 
     vllm.entrypoints.openai.serving_engine.OpenAIServing._normalize_prompt_text_to_input = \
         _new_normalize_prompt_text_to_input
 
