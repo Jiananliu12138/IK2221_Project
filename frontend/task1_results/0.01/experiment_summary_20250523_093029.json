@@ -1,0 +1,30 @@
+[
+  {
+    "experiment_name": "exp1_sequence_length",
+    "num_requests": 11,
+    "successful_requests": 10,
+    "overall_throughput": 0.5800861856526842,
+    "average_latency": 1.7232752493582666
+  },
+  {
+    "experiment_name": "exp2_cache_reuse",
+    "num_requests": 12,
+    "successful_requests": 12,
+    "overall_throughput": 0.35040026088474624,
+    "average_latency": 2.8533868411711105
+  },
+  {
+    "experiment_name": "exp3a_low_diversity",
+    "num_requests": 12,
+    "successful_requests": 11,
+    "overall_throughput": 0.27150037655927584,
+    "average_latency": 3.664753191638738
+  },
+  {
+    "experiment_name": "exp3b_high_diversity",
+    "num_requests": 16,
+    "successful_requests": 13,
+    "overall_throughput": 0.018673253052034787,
+    "average_latency": 48.98711451905994
+  }
+]

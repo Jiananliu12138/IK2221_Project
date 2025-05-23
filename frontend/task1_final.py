@@ -201,7 +201,7 @@ def main():
     logger.info("\n===== Experiment 1: Latency vs Sequence Length =====")
 
     exp1_generator = generate_requests(generator.contexts, questions)
-    exp1_summary = generator.run_experiment_with_generator(exp1_generator, "exp1_sequence_length", max_requests=50, results_dir=cache_results_dir)
+    exp1_summary = generator.run_experiment_with_generator(exp1_generator, "exp1_sequence_length", max_requests=10, results_dir=cache_results_dir)
     experiment_summaries.append(exp1_summary)
     
     # Plot results

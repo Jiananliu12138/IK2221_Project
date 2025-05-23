@@ -29,8 +29,8 @@ class ChatSession:
     def set_context(self, context_strings):
         # Keep only the most recent 4 messages (2 exchanges) to prevent context length from growing too large
         # while still preserving some history for KV cache
-        if len(self.messages) > 10:
-            self.messages = self.messages[-4:]
+        #if len(self.messages) > 10:
+        #    self.messages = self.messages[-4:]
         
         contexts = []
         for context in context_strings:

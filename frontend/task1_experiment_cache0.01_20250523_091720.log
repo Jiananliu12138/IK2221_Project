@@ -1,0 +1,260 @@
+2025-05-23 09:17:20,509 - INFO - 
+===== Running Task 1 experiments with cache size: 0.01 =====
+2025-05-23 09:17:20,510 - INFO - Results will be saved to: task1_results/0.01
+2025-05-23 09:17:20,510 - INFO - Initializing with IP: 192.168.2.27, Port: 8000
+2025-05-23 09:17:20,623 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-23 09:17:20,625 - INFO - Chat session initialized successfully
+2025-05-23 09:17:20,625 - INFO - Loading contexts from directory: ./data
+2025-05-23 09:17:20,629 - INFO - Successfully loaded 15 contexts from ./data
+2025-05-23 09:17:20,630 - INFO - 
+===== Experiment 1: Latency vs Sequence Length =====
+2025-05-23 09:17:20,630 - INFO - 
+===== Starting experiment: exp1_sequence_length =====
+2025-05-23 09:17:20,630 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-05-23 09:17:20,657 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:21,338 - INFO - Request completed in 0.71s, response length: 188 chars
+2025-05-23 09:17:21,339 - INFO - Request 1 - Context: sigcomm24-crux, Length: 3601, Latency: 0.71s, Throughput: 1.41 req/s
+2025-05-23 09:17:21,339 - INFO - Sending question for context sigcomm24-crux: 'Summarise the main ideas of th...'
+2025-05-23 09:17:21,366 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:21,927 - INFO - Request completed in 0.59s, response length: 81 chars
+2025-05-23 09:17:21,927 - INFO - Request 2 - Context: sigcomm24-crux, Length: 3616, Latency: 0.59s, Throughput: 1.54 req/s
+2025-05-23 09:17:21,927 - INFO - Sending question for context sigcomm24-crux: 'What is the research context o...'
+2025-05-23 09:17:21,968 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:23,890 - INFO - Request completed in 1.96s, response length: 516 chars
+2025-05-23 09:17:23,891 - INFO - Request 3 - Context: sigcomm24-crux, Length: 3604, Latency: 1.96s, Throughput: 0.92 req/s
+2025-05-23 09:17:23,891 - INFO - Sending question for context sigcomm24-crux: 'How the main experiments in th...'
+2025-05-23 09:17:23,939 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:26,057 - INFO - Request completed in 2.17s, response length: 343 chars
+2025-05-23 09:17:26,057 - INFO - Request 4 - Context: sigcomm24-crux, Length: 3615, Latency: 2.17s, Throughput: 0.74 req/s
+2025-05-23 09:17:26,057 - INFO - Sending question for context sigcomm24-crux: 'What exactly are the experimen...'
+2025-05-23 09:17:26,113 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:28,397 - INFO - Request completed in 2.34s, response length: 475 chars
+2025-05-23 09:17:28,397 - INFO - Request 5 - Context: sigcomm24-crux, Length: 3631, Latency: 2.34s, Throughput: 0.64 req/s
+2025-05-23 09:17:28,397 - INFO - Sending question for context sigcomm24-crux: 'What are the main conclusions ...'
+2025-05-23 09:17:28,462 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:29,099 - INFO - Request completed in 0.70s, response length: 74 chars
+2025-05-23 09:17:29,099 - INFO - Request 6 - Context: sigcomm24-crux, Length: 3608, Latency: 0.70s, Throughput: 0.71 req/s
+2025-05-23 09:17:29,099 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-05-23 09:17:29,173 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:31,051 - INFO - Request completed in 1.95s, response length: 376 chars
+2025-05-23 09:17:31,051 - INFO - Request 7 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 1.95s, Throughput: 0.67 req/s
+2025-05-23 09:17:31,051 - INFO - Sending question for context nsdi22-paper-reda_1: 'Summarise the main ideas of th...'
+2025-05-23 09:17:31,126 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:31,871 - INFO - Request completed in 0.82s, response length: 81 chars
+2025-05-23 09:17:31,872 - INFO - Request 8 - Context: nsdi22-paper-reda_1, Length: 3722, Latency: 0.82s, Throughput: 0.71 req/s
+2025-05-23 09:17:31,872 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the research context o...'
+2025-05-23 09:17:31,949 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:35,092 - INFO - Request completed in 3.22s, response length: 773 chars
+2025-05-23 09:17:35,092 - INFO - Request 9 - Context: nsdi22-paper-reda_1, Length: 3710, Latency: 3.22s, Throughput: 0.62 req/s
+2025-05-23 09:17:35,092 - INFO - Sending question for context nsdi22-paper-reda_1: 'How the main experiments in th...'
+2025-05-23 09:17:35,178 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:37,868 - INFO - Request completed in 2.78s, response length: 574 chars
+2025-05-23 09:17:37,868 - INFO - Request 10 - Context: nsdi22-paper-reda_1, Length: 3721, Latency: 2.78s, Throughput: 0.58 req/s
+2025-05-23 09:17:37,869 - INFO - 
+===== Experiment complete: exp1_sequence_length =====
+2025-05-23 09:17:37,869 - INFO - Successful requests: 10/11
+2025-05-23 09:17:37,870 - INFO - Overall throughput: 0.58 requests/second
+2025-05-23 09:17:37,870 - INFO - Average latency: 1.72 seconds
+2025-05-23 09:17:37,872 - INFO - Results saved to task1_results/0.01/exp1_sequence_length_results.json
+2025-05-23 09:17:38,078 - INFO - Plot saved to task1_results/0.01/Exp1_sequence_length_vs_latency_20250523_091737.png
+2025-05-23 09:17:38,209 - INFO - Plot saved to task1_results/0.01/Exp1_context_comparison_20250523_091738.png
+2025-05-23 09:17:38,209 - INFO - 
+===== Experiment 2: Cache Reuse with Repeated Context =====
+2025-05-23 09:17:38,209 - INFO - 
+===== Starting experiment: exp2_cache_reuse =====
+2025-05-23 09:17:38,209 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-05-23 09:17:38,278 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:41,428 - INFO - Request completed in 3.22s, response length: 593 chars
+2025-05-23 09:17:41,428 - INFO - Request 1 - Context: sigcomm24-crux, Length: 3601, Latency: 3.22s, Throughput: 0.31 req/s
+2025-05-23 09:17:41,428 - INFO - Sending question for context sigcomm24-crux: 'Summarise the main ideas of th...'
+2025-05-23 09:17:41,634 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:42,883 - INFO - Request completed in 1.46s, response length: 81 chars
+2025-05-23 09:17:42,883 - INFO - Request 2 - Context: sigcomm24-crux, Length: 3616, Latency: 1.46s, Throughput: 0.43 req/s
+2025-05-23 09:17:42,884 - INFO - Sending question for context sigcomm24-crux: 'What is the research context o...'
+2025-05-23 09:17:43,109 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:45,767 - INFO - Request completed in 2.88s, response length: 516 chars
+2025-05-23 09:17:45,767 - INFO - Request 3 - Context: sigcomm24-crux, Length: 3604, Latency: 2.88s, Throughput: 0.40 req/s
+2025-05-23 09:17:45,767 - INFO - Sending question for context sigcomm24-crux: 'How the main experiments in th...'
+2025-05-23 09:17:46,108 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:49,296 - INFO - Request completed in 3.53s, response length: 343 chars
+2025-05-23 09:17:49,296 - INFO - Request 4 - Context: sigcomm24-crux, Length: 3615, Latency: 3.53s, Throughput: 0.36 req/s
+2025-05-23 09:17:49,296 - INFO - Sending question for context sigcomm24-crux: 'What exactly are the experimen...'
+2025-05-23 09:17:49,530 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:52,930 - INFO - Request completed in 3.63s, response length: 475 chars
+2025-05-23 09:17:52,930 - INFO - Request 5 - Context: sigcomm24-crux, Length: 3631, Latency: 3.63s, Throughput: 0.34 req/s
+2025-05-23 09:17:52,930 - INFO - Sending question for context sigcomm24-crux: 'What are the main conclusions ...'
+2025-05-23 09:17:53,219 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:54,764 - INFO - Request completed in 1.83s, response length: 74 chars
+2025-05-23 09:17:54,764 - INFO - Request 6 - Context: sigcomm24-crux, Length: 3608, Latency: 1.83s, Throughput: 0.36 req/s
+2025-05-23 09:17:54,764 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-05-23 09:17:55,013 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:57,473 - INFO - Request completed in 2.71s, response length: 350 chars
+2025-05-23 09:17:57,473 - INFO - Request 7 - Context: sigcomm24-crux, Length: 3601, Latency: 2.71s, Throughput: 0.36 req/s
+2025-05-23 09:17:57,473 - INFO - Sending question for context sigcomm24-crux: 'Summarise the main ideas of th...'
+2025-05-23 09:17:57,696 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:17:59,378 - INFO - Request completed in 1.91s, response length: 81 chars
+2025-05-23 09:17:59,379 - INFO - Request 8 - Context: sigcomm24-crux, Length: 3616, Latency: 1.91s, Throughput: 0.38 req/s
+2025-05-23 09:17:59,379 - INFO - Sending question for context sigcomm24-crux: 'What is the research context o...'
+2025-05-23 09:17:59,877 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:03,176 - INFO - Request completed in 3.80s, response length: 516 chars
+2025-05-23 09:18:03,176 - INFO - Request 9 - Context: sigcomm24-crux, Length: 3604, Latency: 3.80s, Throughput: 0.36 req/s
+2025-05-23 09:18:03,176 - INFO - Sending question for context sigcomm24-crux: 'How the main experiments in th...'
+2025-05-23 09:18:03,404 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:05,656 - INFO - Request completed in 2.48s, response length: 133 chars
+2025-05-23 09:18:05,657 - INFO - Request 10 - Context: sigcomm24-crux, Length: 3615, Latency: 2.48s, Throughput: 0.36 req/s
+2025-05-23 09:18:05,657 - INFO - Sending question for context sigcomm24-crux: 'What exactly are the experimen...'
+2025-05-23 09:18:05,903 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:09,907 - INFO - Request completed in 4.25s, response length: 471 chars
+2025-05-23 09:18:09,907 - INFO - Request 11 - Context: sigcomm24-crux, Length: 3631, Latency: 4.25s, Throughput: 0.35 req/s
+2025-05-23 09:18:09,907 - INFO - Sending question for context sigcomm24-crux: 'What are the main conclusions ...'
+2025-05-23 09:18:10,284 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:12,455 - INFO - Request completed in 2.55s, response length: 74 chars
+2025-05-23 09:18:12,455 - INFO - Request 12 - Context: sigcomm24-crux, Length: 3608, Latency: 2.55s, Throughput: 0.35 req/s
+2025-05-23 09:18:12,456 - INFO - 
+===== Experiment complete: exp2_cache_reuse =====
+2025-05-23 09:18:12,456 - INFO - Successful requests: 12/12
+2025-05-23 09:18:12,456 - INFO - Overall throughput: 0.35 requests/second
+2025-05-23 09:18:12,456 - INFO - Average latency: 2.85 seconds
+2025-05-23 09:18:12,498 - INFO - Results saved to task1_results/0.01/exp2_cache_reuse_results.json
+2025-05-23 09:18:12,655 - INFO - Plot saved to task1_results/0.01/Exp2_request_number_vs_latency_20250523_091812.png
+2025-05-23 09:18:12,655 - INFO - 
+===== Experiment 3: Impact of Context Diversity =====
+2025-05-23 09:18:12,655 - INFO - Running with low diversity (only 2 contexts)...
+2025-05-23 09:18:12,655 - INFO - 
+===== Starting experiment: exp3a_low_diversity =====
+2025-05-23 09:18:12,655 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-05-23 09:18:12,937 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:15,465 - INFO - Request completed in 2.81s, response length: 217 chars
+2025-05-23 09:18:15,466 - INFO - Request 1 - Context: sigcomm24-crux, Length: 3601, Latency: 2.81s, Throughput: 0.36 req/s
+2025-05-23 09:18:15,466 - INFO - Sending question for context sigcomm24-crux: 'Summarise the main ideas of th...'
+2025-05-23 09:18:15,954 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:18,249 - INFO - Request completed in 2.78s, response length: 81 chars
+2025-05-23 09:18:18,249 - INFO - Request 2 - Context: sigcomm24-crux, Length: 3616, Latency: 2.78s, Throughput: 0.36 req/s
+2025-05-23 09:18:18,249 - INFO - Sending question for context sigcomm24-crux: 'What is the research context o...'
+2025-05-23 09:18:18,551 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:22,676 - INFO - Request completed in 4.43s, response length: 516 chars
+2025-05-23 09:18:22,676 - INFO - Request 3 - Context: sigcomm24-crux, Length: 3604, Latency: 4.43s, Throughput: 0.30 req/s
+2025-05-23 09:18:22,676 - INFO - Sending question for context sigcomm24-crux: 'How the main experiments in th...'
+2025-05-23 09:18:22,955 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:25,799 - INFO - Request completed in 3.12s, response length: 133 chars
+2025-05-23 09:18:25,799 - INFO - Request 4 - Context: sigcomm24-crux, Length: 3615, Latency: 3.12s, Throughput: 0.30 req/s
+2025-05-23 09:18:25,799 - INFO - Sending question for context sigcomm24-crux: 'What exactly are the experimen...'
+2025-05-23 09:18:26,118 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:30,891 - INFO - Request completed in 5.09s, response length: 471 chars
+2025-05-23 09:18:30,891 - INFO - Request 5 - Context: sigcomm24-crux, Length: 3631, Latency: 5.09s, Throughput: 0.27 req/s
+2025-05-23 09:18:30,891 - INFO - Sending question for context sigcomm24-crux: 'What are the main conclusions ...'
+2025-05-23 09:18:31,198 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:33,821 - INFO - Request completed in 2.93s, response length: 74 chars
+2025-05-23 09:18:33,822 - INFO - Request 6 - Context: sigcomm24-crux, Length: 3608, Latency: 2.93s, Throughput: 0.28 req/s
+2025-05-23 09:18:33,822 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-05-23 09:18:34,167 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:38,486 - INFO - Request completed in 4.66s, response length: 450 chars
+2025-05-23 09:18:38,486 - INFO - Request 7 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 4.66s, Throughput: 0.27 req/s
+2025-05-23 09:18:38,487 - INFO - Sending question for context nsdi22-paper-reda_1: 'Summarise the main ideas of th...'
+2025-05-23 09:18:38,804 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:41,351 - INFO - Request completed in 2.86s, response length: 81 chars
+2025-05-23 09:18:41,351 - INFO - Request 8 - Context: nsdi22-paper-reda_1, Length: 3722, Latency: 2.86s, Throughput: 0.28 req/s
+2025-05-23 09:18:41,351 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the research context o...'
+2025-05-23 09:18:42,583 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:47,099 - INFO - Request completed in 5.75s, response length: 361 chars
+2025-05-23 09:18:47,099 - INFO - Request 9 - Context: nsdi22-paper-reda_1, Length: 3710, Latency: 5.75s, Throughput: 0.26 req/s
+2025-05-23 09:18:47,099 - INFO - Sending question for context nsdi22-paper-reda_1: 'How the main experiments in th...'
+2025-05-23 09:18:47,632 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:52,689 - INFO - Request completed in 5.59s, response length: 574 chars
+2025-05-23 09:18:52,690 - INFO - Request 10 - Context: nsdi22-paper-reda_1, Length: 3721, Latency: 5.59s, Throughput: 0.25 req/s
+2025-05-23 09:18:52,690 - INFO - Sending question for context nsdi22-paper-reda_1: 'What exactly are the experimen...'
+2025-05-23 09:18:52,865 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-23 09:18:52,866 - ERROR - Request failed: Error code: 400 - {'object': 'error', 'message': "This model's maximum context length is 32768 tokens. However, you requested 33016 tokens in the messages, Please reduce the length of the messages.", 'type': 'BadRequestError', 'param': None, 'code': 400}
+2025-05-23 09:18:52,886 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-23 09:18:52,887 - INFO - Chat session initialized successfully
+2025-05-23 09:18:52,887 - WARNING - Request 11 failed - Context: nsdi22-paper-reda_1
+2025-05-23 09:18:52,887 - INFO - Sending question for context nsdi22-paper-reda_1: 'What are the main conclusions ...'
+2025-05-23 09:18:52,899 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:53,170 - INFO - Request completed in 0.28s, response length: 40 chars
+2025-05-23 09:18:53,170 - INFO - Request 12 - Context: nsdi22-paper-reda_1, Length: 3714, Latency: 0.28s, Throughput: 0.27 req/s
+2025-05-23 09:18:53,171 - INFO - 
+===== Experiment complete: exp3a_low_diversity =====
+2025-05-23 09:18:53,171 - INFO - Successful requests: 11/12
+2025-05-23 09:18:53,171 - INFO - Overall throughput: 0.27 requests/second
+2025-05-23 09:18:53,171 - INFO - Average latency: 3.66 seconds
+2025-05-23 09:18:53,173 - INFO - Results saved to task1_results/0.01/exp3a_low_diversity_results.json
+2025-05-23 09:18:53,306 - INFO - Plot saved to task1_results/0.01/Exp3a_low_diversity_latency_20250523_091853.png
+2025-05-23 09:18:53,429 - INFO - Plot saved to task1_results/0.01/Exp3a_low_diversity_throughput_20250523_091853.png
+2025-05-23 09:18:53,429 - INFO - Running with high diversity (all contexts shuffled)...
+2025-05-23 09:18:53,429 - INFO - 
+===== Starting experiment: exp3b_high_diversity =====
+2025-05-23 09:18:53,429 - INFO - Sending question for context osdi24-agrawal: 'Summarise the main ideas of th...'
+2025-05-23 09:18:53,450 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:18:53,950 - INFO - Request completed in 0.52s, response length: 52 chars
+2025-05-23 09:18:53,950 - INFO - Request 1 - Context: osdi24-agrawal, Length: 3564, Latency: 0.52s, Throughput: 1.92 req/s
+2025-05-23 09:18:53,950 - INFO - Sending question for context nsdi20-paper-barbette: 'How the main experiments in th...'
+2025-05-23 09:18:53,988 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:07,211 - INFO - Request completed in 613.26s, response length: 45313 chars
+2025-05-23 09:29:07,212 - INFO - Request 2 - Context: nsdi20-paper-barbette, Length: 3123, Latency: 613.26s, Throughput: 0.00 req/s
+2025-05-23 09:29:07,212 - INFO - Sending question for context metron-nsdi18: 'What exactly are the experimen...'
+2025-05-23 09:29:07,341 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 400 Bad Request"
+2025-05-23 09:29:07,344 - ERROR - Request failed: Error code: 400 - {'object': 'error', 'message': "This model's maximum context length is 32768 tokens. However, you requested 33205 tokens in the messages, Please reduce the length of the messages.", 'type': 'BadRequestError', 'param': None, 'code': 400}
+2025-05-23 09:29:07,364 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-23 09:29:07,364 - INFO - Chat session initialized successfully
+2025-05-23 09:29:07,364 - WARNING - Request 3 failed - Context: metron-nsdi18
+2025-05-23 09:29:07,365 - INFO - Sending question for context click: 'What is the main topic of this...'
+2025-05-23 09:29:07,376 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:08,508 - INFO - Request completed in 1.14s, response length: 351 chars
+2025-05-23 09:29:08,509 - INFO - Request 4 - Context: click, Length: 3160, Latency: 1.14s, Throughput: 0.00 req/s
+2025-05-23 09:29:08,509 - INFO - Sending question for context sigcomm24-crux: 'How the main experiments in th...'
+2025-05-23 09:29:08,540 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:10,078 - INFO - Request completed in 1.57s, response length: 341 chars
+2025-05-23 09:29:10,078 - INFO - Request 5 - Context: sigcomm24-crux, Length: 3615, Latency: 1.57s, Throughput: 0.01 req/s
+2025-05-23 09:29:10,078 - INFO - Sending question for context nsdi22-paper-reda_1: 'What are the main conclusions ...'
+2025-05-23 09:29:10,118 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:10,629 - INFO - Request completed in 0.55s, response length: 74 chars
+2025-05-23 09:29:10,629 - INFO - Request 6 - Context: nsdi22-paper-reda_1, Length: 3714, Latency: 0.55s, Throughput: 0.01 req/s
+2025-05-23 09:29:10,630 - INFO - Sending question for context metron-nsdi18: 'What are the main conclusions ...'
+2025-05-23 09:29:10,677 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:11,266 - INFO - Request completed in 0.64s, response length: 74 chars
+2025-05-23 09:29:11,266 - INFO - Request 7 - Context: metron-nsdi18, Length: 3041, Latency: 0.64s, Throughput: 0.01 req/s
+2025-05-23 09:29:11,266 - INFO - Sending question for context sigcomm24-crux: 'What exactly are the experimen...'
+2025-05-23 09:29:11,334 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:14,287 - INFO - Request completed in 3.02s, response length: 686 chars
+2025-05-23 09:29:14,287 - INFO - Request 8 - Context: sigcomm24-crux, Length: 3631, Latency: 3.02s, Throughput: 0.01 req/s
+2025-05-23 09:29:14,287 - INFO - Sending question for context sigcomm2023_janus: 'How the main experiments in th...'
+2025-05-23 09:29:14,350 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:17,262 - INFO - Request completed in 2.97s, response length: 693 chars
+2025-05-23 09:29:17,263 - INFO - Request 9 - Context: sigcomm2023_janus, Length: 3406, Latency: 2.97s, Throughput: 0.01 req/s
+2025-05-23 09:29:17,263 - INFO - Sending question for context sigcomm2023_janus: 'What exactly are the experimen...'
+2025-05-23 09:29:17,331 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:20,152 - INFO - Request completed in 2.89s, response length: 679 chars
+2025-05-23 09:29:20,152 - INFO - Request 10 - Context: sigcomm2023_janus, Length: 3422, Latency: 2.89s, Throughput: 0.01 req/s
+2025-05-23 09:29:20,152 - INFO - Sending question for context nsdi22-paper-reda_1: 'How the main experiments in th...'
+2025-05-23 09:29:20,236 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:23,841 - INFO - Request completed in 3.69s, response length: 850 chars
+2025-05-23 09:29:23,841 - INFO - Request 11 - Context: nsdi22-paper-reda_1, Length: 3721, Latency: 3.69s, Throughput: 0.02 req/s
+2025-05-23 09:29:23,842 - INFO - Sending question for context aplomb-sigcomm12: 'What are the main conclusions ...'
+2025-05-23 09:29:23,924 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:24,694 - INFO - Request completed in 0.85s, response length: 74 chars
+2025-05-23 09:29:24,694 - INFO - Request 12 - Context: aplomb-sigcomm12, Length: 3480, Latency: 0.85s, Throughput: 0.02 req/s
+2025-05-23 09:29:24,694 - INFO - Sending question for context ServerlessLLM_summary: 'How the main experiments in th...'
+2025-05-23 09:29:24,774 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:27,524 - INFO - Request completed in 2.83s, response length: 643 chars
+2025-05-23 09:29:27,524 - INFO - Request 13 - Context: ServerlessLLM_summary, Length: 3150, Latency: 2.83s, Throughput: 0.02 req/s
+2025-05-23 09:29:27,524 - INFO - Sending question for context osdi24-sun-biao: 'How the main experiments in th...'
+2025-05-23 09:29:27,607 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:29:30,423 - INFO - Request completed in 2.90s, response length: 572 chars
+2025-05-23 09:29:30,423 - INFO - Request 14 - Context: osdi24-sun-biao, Length: 3628, Latency: 2.90s, Throughput: 0.02 req/s
+2025-05-23 09:29:30,423 - INFO - Sending question for context osdi24-agrawal: 'How the main experiments in th...'
+2025-05-23 09:29:30,516 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-23 09:30:29,590 - ERROR - Request failed: peer closed connection without sending complete message body (incomplete chunked read)
+2025-05-23 09:30:29,611 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-23 09:30:29,612 - INFO - Chat session initialized successfully
+2025-05-23 09:30:29,612 - WARNING - Request 15 failed - Context: osdi24-agrawal
+2025-05-23 09:30:29,613 - INFO - 
+===== Experiment complete: exp3b_high_diversity =====
+2025-05-23 09:30:29,613 - INFO - Successful requests: 13/16
+2025-05-23 09:30:29,613 - INFO - Overall throughput: 0.02 requests/second
+2025-05-23 09:30:29,613 - INFO - Average latency: 48.99 seconds
+2025-05-23 09:30:29,615 - INFO - Results saved to task1_results/0.01/exp3b_high_diversity_results.json
+2025-05-23 09:30:29,773 - INFO - Plot saved to task1_results/0.01/Exp3b_high_diversity_latency_20250523_093029.png
+2025-05-23 09:30:29,933 - INFO - Plot saved to task1_results/0.01/Exp3b_high_diversity_throughput_20250523_093029.png
+2025-05-23 09:30:29,934 - INFO - Experiment summaries saved to task1_results/0.01/experiment_summary_20250523_093029.json
+2025-05-23 09:30:29,934 - INFO - Current cache size: 0.01
+2025-05-23 09:30:29,934 - INFO - Log file: task1_experiment_20250523_091720.log
