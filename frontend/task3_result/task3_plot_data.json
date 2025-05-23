@@ -1,0 +1,23 @@
+[
+  {
+    "rag_db_size": 3,
+    "accuracy": 0.6666666666666666,
+    "avg_retrieval_time": 0.5571561790485349,
+    "avg_llm_time": 1.1371691638810768,
+    "avg_total_time": 1.6943433997738693
+  },
+  {
+    "rag_db_size": 7,
+    "accuracy": 0.3333333333333333,
+    "avg_retrieval_time": 0.2709530503489077,
+    "avg_llm_time": 0.8601316175837483,
+    "avg_total_time": 1.1310988446801074
+  },
+  {
+    "rag_db_size": 11,
+    "accuracy": 0.3333333333333333,
+    "avg_retrieval_time": 0.22350342670041654,
+    "avg_llm_time": 1.4133781751410828,
+    "avg_total_time": 1.6368960169557896
+  }
+]
