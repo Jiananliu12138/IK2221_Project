@@ -1,0 +1,56 @@
+2025-05-26 23:31:06,821 - INFO - 
+===== Running Task 1 exp2_cache_reuse with cache size: 0.2 =====
+2025-05-26 23:31:06,822 - INFO - Results will be saved to: task1_results/0.2
+2025-05-26 23:31:06,947 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-26 23:31:06,950 - INFO - Chat session initialized successfully
+2025-05-26 23:31:06,951 - INFO - Loading contexts from directory: ../data
+2025-05-26 23:31:06,958 - INFO - Successfully loaded 15 contexts from ../data
+2025-05-26 23:31:06,958 - INFO - 
+===== Starting experiment: exp2_cache_reuse =====
+2025-05-26 23:31:06,959 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-05-26 23:31:07,958 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:09,935 - INFO - Request completed in 2.98s, response length: 535 chars
+2025-05-26 23:31:09,935 - INFO - Request 1 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 2.98s, Throughput: 0.34 req/s
+2025-05-26 23:31:09,935 - INFO - Sending question for context nsdi22-paper-reda_1: 'Summarise the main ideas of th...'
+2025-05-26 23:31:09,967 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:13,226 - INFO - Request completed in 3.29s, response length: 633 chars
+2025-05-26 23:31:13,226 - INFO - Request 2 - Context: nsdi22-paper-reda_1, Length: 3722, Latency: 3.29s, Throughput: 0.32 req/s
+2025-05-26 23:31:13,226 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the research context o...'
+2025-05-26 23:31:13,267 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:14,103 - INFO - Request completed in 0.88s, response length: 175 chars
+2025-05-26 23:31:14,103 - INFO - Request 3 - Context: nsdi22-paper-reda_1, Length: 3710, Latency: 0.88s, Throughput: 0.42 req/s
+2025-05-26 23:31:14,104 - INFO - Sending question for context nsdi22-paper-reda_1: 'How the main experiments in th...'
+2025-05-26 23:31:14,159 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:14,985 - INFO - Request completed in 0.88s, response length: 171 chars
+2025-05-26 23:31:14,985 - INFO - Request 4 - Context: nsdi22-paper-reda_1, Length: 3721, Latency: 0.88s, Throughput: 0.50 req/s
+2025-05-26 23:31:14,985 - INFO - Sending question for context nsdi22-paper-reda_1: 'What exactly are the experimen...'
+2025-05-26 23:31:15,045 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:16,104 - INFO - Request completed in 1.12s, response length: 248 chars
+2025-05-26 23:31:16,104 - INFO - Request 5 - Context: nsdi22-paper-reda_1, Length: 3784, Latency: 1.12s, Throughput: 0.55 req/s
+2025-05-26 23:31:16,105 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-05-26 23:31:16,166 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:17,082 - INFO - Request completed in 0.98s, response length: 168 chars
+2025-05-26 23:31:17,082 - INFO - Request 6 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 0.98s, Throughput: 0.59 req/s
+2025-05-26 23:31:17,082 - INFO - Sending question for context nsdi22-paper-reda_1: 'Summarise the main ideas of th...'
+2025-05-26 23:31:17,148 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:18,296 - INFO - Request completed in 1.21s, response length: 279 chars
+2025-05-26 23:31:18,296 - INFO - Request 7 - Context: nsdi22-paper-reda_1, Length: 3722, Latency: 1.21s, Throughput: 0.62 req/s
+2025-05-26 23:31:18,296 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the research context o...'
+2025-05-26 23:31:18,367 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:20,175 - INFO - Request completed in 1.88s, response length: 415 chars
+2025-05-26 23:31:20,176 - INFO - Request 8 - Context: nsdi22-paper-reda_1, Length: 3710, Latency: 1.88s, Throughput: 0.61 req/s
+2025-05-26 23:31:20,176 - INFO - Sending question for context nsdi22-paper-reda_1: 'How the main experiments in th...'
+2025-05-26 23:31:20,252 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:21,684 - INFO - Request completed in 1.51s, response length: 287 chars
+2025-05-26 23:31:21,684 - INFO - Request 9 - Context: nsdi22-paper-reda_1, Length: 3721, Latency: 1.51s, Throughput: 0.61 req/s
+2025-05-26 23:31:21,684 - INFO - Sending question for context nsdi22-paper-reda_1: 'What exactly are the experimen...'
+2025-05-26 23:31:21,770 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 23:31:23,065 - INFO - Request completed in 1.38s, response length: 166 chars
+2025-05-26 23:31:23,065 - INFO - Request 10 - Context: nsdi22-paper-reda_1, Length: 3784, Latency: 1.38s, Throughput: 0.62 req/s
+2025-05-26 23:31:23,065 - INFO - 
+===== Experiment complete: exp2_cache_reuse =====
+2025-05-26 23:31:23,065 - INFO - Successful requests: 10/10
+2025-05-26 23:31:23,065 - INFO - Overall throughput: 0.62 requests/second
+2025-05-26 23:31:23,065 - INFO - Average latency: 1.61 seconds
+2025-05-26 23:31:23,067 - INFO - Results saved to task1_results/0.2/exp2_cache_reuse_results.json
+2025-05-26 23:31:23,219 - INFO - Plot saved to task1_results/0.2/Exp2_request_number_vs_latency_20250526_233123.png

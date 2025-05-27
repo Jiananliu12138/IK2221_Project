@@ -1,0 +1,49 @@
+2025-05-27 12:26:22,634 - INFO - 
+===== Running Task 1 exp3b_high_diversity with cache size: 0.2 =====
+2025-05-27 12:26:22,635 - INFO - Results will be saved to: task1_results/0.2
+2025-05-27 12:26:22,746 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-27 12:26:22,747 - INFO - Chat session initialized successfully
+2025-05-27 12:26:22,747 - INFO - Loading contexts from directory: ../data
+2025-05-27 12:26:22,752 - INFO - Successfully loaded 15 contexts from ../data
+2025-05-27 12:26:22,752 - INFO - 
+===== Starting experiment: exp3b_high_diversity =====
+2025-05-27 12:26:22,752 - INFO - Sending question for context SplitRPC-sigmetrics23: 'Summarise the main ideas of th...'
+2025-05-27 12:26:23,756 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:24,274 - INFO - Request completed in 1.52s, response length: 81 chars
+2025-05-27 12:26:24,274 - INFO - Request 1 - Context: SplitRPC-sigmetrics23, Length: 3562, Latency: 1.52s, Throughput: 0.66 req/s
+2025-05-27 12:26:24,274 - INFO - Sending question for context vllm: 'Summarise the main ideas of th...'
+2025-05-27 12:26:24,308 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:25,838 - INFO - Request completed in 1.56s, response length: 81 chars
+2025-05-27 12:26:25,838 - INFO - Request 2 - Context: vllm, Length: 3859, Latency: 1.56s, Throughput: 0.65 req/s
+2025-05-27 12:26:25,838 - INFO - Sending question for context osdi24-lee: 'Summarise the main ideas of th...'
+2025-05-27 12:26:25,880 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:26,523 - INFO - Request completed in 0.68s, response length: 81 chars
+2025-05-27 12:26:26,523 - INFO - Request 3 - Context: osdi24-lee, Length: 3392, Latency: 0.68s, Throughput: 0.80 req/s
+2025-05-27 12:26:26,524 - INFO - Sending question for context sigcomm2023_janus: 'Summarise the main ideas of th...'
+2025-05-27 12:26:26,573 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:27,093 - INFO - Request completed in 0.57s, response length: 81 chars
+2025-05-27 12:26:27,093 - INFO - Request 4 - Context: sigcomm2023_janus, Length: 3407, Latency: 0.57s, Throughput: 0.72 req/s
+2025-05-27 12:26:27,093 - INFO - Sending question for context aplomb-sigcomm12: 'What is the main topic of this...'
+2025-05-27 12:26:27,148 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:27,890 - INFO - Request completed in 0.80s, response length: 161 chars
+2025-05-27 12:26:27,890 - INFO - Request 5 - Context: aplomb-sigcomm12, Length: 3473, Latency: 0.80s, Throughput: 0.97 req/s
+2025-05-27 12:26:27,890 - INFO - Sending question for context ServerlessLLM_summary: 'Summarise the main ideas of th...'
+2025-05-27 12:26:27,970 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:28,518 - INFO - Request completed in 0.63s, response length: 81 chars
+2025-05-27 12:26:28,518 - INFO - Request 6 - Context: ServerlessLLM_summary, Length: 3151, Latency: 1.63s, Throughput: 1.04 req/s
+2025-05-27 12:26:28,518 - INFO - Sending question for context osdi24-sun-biao: 'What is the main topic of this...'
+2025-05-27 12:26:28,587 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:29,144 - INFO - Request completed in 0.63s, response length: 62 chars
+2025-05-27 12:26:29,144 - INFO - Request 7 - Context: osdi24-sun-biao, Length: 3614, Latency: 0.63s, Throughput: 1.10 req/s
+2025-05-27 12:26:29,144 - INFO - Sending question for context osdi24-agrawal: 'What is the main topic of this...'
+2025-05-27 12:26:29,217 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:26:29,856 - INFO - Request completed in 0.71s, response length: 62 chars
+2025-05-27 12:26:29,856 - INFO - Request 8 - Context: osdi24-agrawal, Length: 3549, Latency: 0.71s, Throughput: 0.83 req/s
+2025-05-27 12:26:29,857 - INFO - 
+===== Experiment complete: exp3b_high_diversity =====
+2025-05-27 12:26:29,857 - INFO - Successful requests: 8/9
+2025-05-27 12:26:29,857 - INFO - Overall throughput: 0.85 requests/second
+2025-05-27 12:26:29,857 - INFO - Average latency: 1.01 seconds
+2025-05-27 12:26:29,873 - INFO - Results saved to task1_results/0.2/exp3b_high_diversity_results.json
+2025-05-27 12:26:30,154 - INFO - Plot saved to task1_results/0.2/Exp3b_high_diversity_latency_20250527_122629.png
+2025-05-27 12:26:30,278 - INFO - Plot saved to task1_results/0.2/Exp3b_high_diversity_throughput_20250527_122629.png

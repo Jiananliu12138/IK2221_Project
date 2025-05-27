@@ -1,0 +1,57 @@
+2025-05-26 22:38:32,150 - INFO - 
+===== Running Task 1 exp1_sequence_length with cache size: 0.2 =====
+2025-05-26 22:38:32,151 - INFO - Results will be saved to: task1_results/0.2
+2025-05-26 22:38:32,303 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-26 22:38:32,305 - INFO - Chat session initialized successfully
+2025-05-26 22:38:32,305 - INFO - Loading contexts from directory: ../data
+2025-05-26 22:38:32,313 - INFO - Successfully loaded 15 contexts from ../data
+2025-05-26 22:38:32,313 - INFO - 
+===== Starting experiment: exp1_sequence_length =====
+2025-05-26 22:38:32,313 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-05-26 22:38:33,334 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:34,028 - INFO - Request completed in 1.71s, response length: 135 chars
+
+2025-05-26 22:38:34,028 - INFO - Request 1 - Context: sigcomm24-crux, Length: 3601, Latency: 1.71s, Throughput: 0.58 req/s
+2025-05-26 22:38:34,028 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-05-26 22:38:34,065 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:35,777 - INFO - Request completed in 1.75s, response length: 122 chars
+
+2025-05-26 22:38:35,777 - INFO - Request 2 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 1.75s, Throughput: 0.58 req/s
+2025-05-26 22:38:35,777 - INFO - Sending question for context osdi24-sun-biao: 'What is the main topic of this...'
+2025-05-26 22:38:35,821 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:36,560 - INFO - Request completed in 0.78s, response length: 129 chars
+
+2025-05-26 22:38:36,560 - INFO - Request 3 - Context: osdi24-sun-biao, Length: 3614, Latency: 0.78s, Throughput: 0.71 req/s
+2025-05-26 22:38:36,560 - INFO - Sending question for context ServerlessLLM_summary: 'What is the main topic of this...'
+2025-05-26 22:38:36,610 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:37,337 - INFO - Request completed in 0.78s, response length: 143 chars
+
+2025-05-26 22:38:37,337 - INFO - Request 4 - Context: ServerlessLLM_summary, Length: 3136, Latency: 0.78s, Throughput: 0.80 req/s
+2025-05-26 22:38:37,337 - INFO - Sending question for context aplomb-sigcomm12: 'What is the main topic of this...'
+2025-05-26 22:38:37,392 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:38,181 - INFO - Request completed in 0.84s, response length: 142 chars
+
+2025-05-26 22:38:38,181 - INFO - Request 5 - Context: aplomb-sigcomm12, Length: 3473, Latency: 0.84s, Throughput: 0.85 req/s
+2025-05-26 22:38:38,181 - INFO - Sending question for context vllm: 'What is the main topic of this...'
+2025-05-26 22:38:38,244 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:39,024 - INFO - Request completed in 0.84s, response length: 129 chars
+
+2025-05-26 22:38:39,024 - INFO - Request 6 - Context: vllm, Length: 3844, Latency: 0.84s, Throughput: 0.89 req/s
+2025-05-26 22:38:39,024 - INFO - Sending question for context cacheblend: 'What is the main topic of this...'
+2025-05-26 22:38:39,091 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:40,023 - INFO - Request completed in 1.00s, response length: 152 chars
+
+2025-05-26 22:38:40,023 - INFO - Request 7 - Context: cacheblend, Length: 3718, Latency: 1.00s, Throughput: 0.91 req/s
+2025-05-26 22:38:40,024 - INFO - Sending question for context click: 'What is the main topic of this...'
+2025-05-26 22:38:40,100 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-26 22:38:40,955 - INFO - Request completed in 0.93s, response length: 157 chars
+
+2025-05-26 22:38:40,955 - INFO - Request 8 - Context: click, Length: 3160, Latency: 0.93s, Throughput: 0.93 req/s
+2025-05-26 22:38:40,955 - INFO - 
+===== Experiment complete: exp1_sequence_length =====
+2025-05-26 22:38:40,955 - INFO - Successful requests: 8/9
+2025-05-26 22:38:40,955 - INFO - Overall throughput: 0.93 requests/second
+2025-05-26 22:38:40,955 - INFO - Average latency: 1.08 seconds
+2025-05-26 22:38:40,957 - INFO - Results saved to task1_results/0.2/exp1_sequence_length_results.json
+2025-05-26 22:38:41,140 - INFO - Plot saved to task1_results/0.2/Exp1_sequence_length_vs_latency_20250526_223840.png
+2025-05-26 22:38:41,328 - INFO - Plot saved to task1_results/0.2/Exp1_context_comparison_20250526_223840.png
