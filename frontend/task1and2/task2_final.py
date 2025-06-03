@@ -17,6 +17,7 @@ PORT = 8000
 # Set up logging
 log_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 log_filename = f"task2_experiment_{log_timestamp}.log"
+print(log_filename)
 logging.basicConfig(
     filename=log_filename,
     level=logging.INFO,
@@ -87,8 +88,9 @@ class Task2BatchRequestGenerator:
         latencies = []
         sequence_lengths = []
         
-        system_prompt = "You are a helpful assistant. I will now give you a document and please answer my question afterwards based on the content in document."
+        system_prompt = "You are a helpful assistant. I will now give you a document with one or more questions regarding it. Please answer my questions."
         
+        prev_context_id = request["context_id"]
         for i, request in enumerate(requests_to_process): #the reqeust in batch is still sent one by one
             context_id = request["context_id"]
             context = request["context"]
@@ -100,7 +102,11 @@ class Task2BatchRequestGenerator:
             logger.info(f"Processing request {i+1}/{len(requests_to_process)} for context {context_id}")
             
             try:
-                self.chat_session.set_context([system_prompt, context]) #set final context
+                if(i == 0):
+                    self.chat_session.set_context([system_prompt, context])
+                elif(prev_context_id != context_id):
+                    self.chat_session.set_context([system_prompt, context])
+                    prev_context_id = context_id
                 
                 request_start = time.perf_counter()
                 response_text = ""
@@ -278,7 +284,7 @@ def main():
     # Get the current cache size from configuration.yaml
     try:
         import yaml
-        with open("../configuration.yaml", 'r') as f:
+        with open("../../configuration.yaml", 'r') as f:
             config = yaml.safe_load(f)
             current_cache_size = config.get('max_local_cache_size', 'unknown')
     except Exception as e:
@@ -293,7 +299,7 @@ def main():
     logger.info(f"Results will be saved to: {cache_results_dir}")
     
     generator = Task2BatchRequestGenerator(ip=IP, port=PORT)
-    generator.load_contexts("./small_data")
+    generator.load_contexts("../data")
     
     experiment_summaries = []
     
