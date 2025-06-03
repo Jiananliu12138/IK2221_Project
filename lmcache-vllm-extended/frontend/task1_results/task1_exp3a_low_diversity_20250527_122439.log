@@ -1,0 +1,49 @@
+2025-05-27 12:24:39,143 - INFO - 
+===== Running Task 1 exp3a_low_diversity with cache size: 0.2 =====
+2025-05-27 12:24:39,144 - INFO - Results will be saved to: task1_results/0.2
+2025-05-27 12:24:39,271 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-05-27 12:24:39,275 - INFO - Chat session initialized successfully
+2025-05-27 12:24:39,275 - INFO - Loading contexts from directory: ../data
+2025-05-27 12:24:39,283 - INFO - Successfully loaded 15 contexts from ../data
+2025-05-27 12:24:39,283 - INFO - 
+===== Starting experiment: exp3a_low_diversity =====
+2025-05-27 12:24:39,284 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-05-27 12:24:40,235 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:40,907 - INFO - Request completed in 1.62s, response length: 135 chars
+2025-05-27 12:24:40,907 - INFO - Request 1 - Context: sigcomm24-crux, Length: 3601, Latency: 1.62s, Throughput: 0.62 req/s
+2025-05-27 12:24:40,907 - INFO - Sending question for context sigcomm24-crux: 'Summarise the main ideas of th...'
+2025-05-27 12:24:40,940 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:43,910 - INFO - Request completed in 3.00s, response length: 554 chars
+2025-05-27 12:24:43,910 - INFO - Request 2 - Context: sigcomm24-crux, Length: 3616, Latency: 1.00s, Throughput: 0.43 req/s
+2025-05-27 12:24:43,910 - INFO - Sending question for context sigcomm24-crux: 'What is the research context o...'
+2025-05-27 12:24:43,949 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:44,788 - INFO - Request completed in 0.88s, response length: 169 chars
+2025-05-27 12:24:44,788 - INFO - Request 3 - Context: sigcomm24-crux, Length: 3604, Latency: 0.88s, Throughput: 0.95 req/s
+2025-05-27 12:24:44,788 - INFO - Sending question for context sigcomm24-crux: 'How the main experiments in th...'
+2025-05-27 12:24:44,841 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:46,049 - INFO - Request completed in 1.26s, response length: 272 chars
+2025-05-27 12:24:46,049 - INFO - Request 4 - Context: sigcomm24-crux, Length: 3615, Latency: 1.56s, Throughput: 0.59 req/s
+2025-05-27 12:24:46,049 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-05-27 12:24:46,107 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:46,618 - INFO - Request completed in 0.57s, response length: 38 chars
+2025-05-27 12:24:46,618 - INFO - Request 5 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 0.57s, Throughput: 0.68 req/s
+2025-05-27 12:24:46,618 - INFO - Sending question for context nsdi22-paper-reda_1: 'Summarise the main ideas of th...'
+2025-05-27 12:24:46,680 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:47,303 - INFO - Request completed in 0.68s, response length: 38 chars
+2025-05-27 12:24:47,303 - INFO - Request 6 - Context: nsdi22-paper-reda_1, Length: 3722, Latency: 0.58s, Throughput: 1.15 req/s
+2025-05-27 12:24:47,303 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the research context o...'
+2025-05-27 12:24:47,356 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:48,039 - INFO - Request completed in 0.74s, response length: 38 chars
+2025-05-27 12:24:48,039 - INFO - Request 7 - Context: nsdi22-paper-reda_1, Length: 3710, Latency: 0.74s, Throughput: 0.80 req/s
+2025-05-27 12:24:48,039 - INFO - Sending question for context nsdi22-paper-reda_1: 'How the main experiments in th...'
+2025-05-27 12:24:48,100 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-05-27 12:24:48,769 - INFO - Request completed in 0.73s, response length: 38 chars
+2025-05-27 12:24:48,769 - INFO - Request 8 - Context: nsdi22-paper-reda_1, Length: 3721, Latency: 1.63s, Throughput: 0.84 req/s
+2025-05-27 12:24:48,769 - INFO - 
+===== Experiment complete: exp3a_low_diversity =====
+2025-05-27 12:24:48,769 - INFO - Successful requests: 8/8
+2025-05-27 12:24:48,769 - INFO - Overall throughput: 0.76 requests/second
+2025-05-27 12:24:48,769 - INFO - Average latency: 1.07 seconds
+2025-05-27 12:24:48,810 - INFO - Results saved to task1_results/0.2/exp3a_low_diversity_results.json
+2025-05-27 12:24:49,080 - INFO - Plot saved to task1_results/0.2/Exp3a_low_diversity_latency_20250527_122448.png
+2025-05-27 12:24:49,203 - INFO - Plot saved to task1_results/0.2/Exp3a_low_diversity_throughput_20250527_122448.png

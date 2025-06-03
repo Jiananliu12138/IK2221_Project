@@ -1,0 +1,233 @@
+2025-06-03 21:25:39,591 - INFO - Start to build RAG DB
+2025-06-03 21:25:39,680 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-06-03 21:25:39,685 - INFO - Building RAG DB, size = 3...
+2025-06-03 21:25:39,686 - INFO - Calculating document emb: vllm
+2025-06-03 21:25:40,686 - INFO - Calculating document emb: metron-nsdi18
+2025-06-03 21:25:41,987 - INFO - RAG DB built successfully.
+2025-06-03 21:25:43,084 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:43,889 - INFO - rag_db大小3========================================
+2025-06-03 21:25:43,889 - INFO - Q: What is the Abstract of CacheBlend?
+2025-06-03 21:25:43,890 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.888
+2025-06-03 21:25:43,890 - INFO - Retrieval time: 0.16s, LLM time: 1.75s, Total: 1.90s
+2025-06-03 21:25:43,890 - INFO - I'm sorry, I couldn'...
+2025-06-03 21:25:43,890 - INFO - ========================================
+2025-06-03 21:25:44,975 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:46,873 - INFO - rag_db大小3========================================
+2025-06-03 21:25:46,873 - INFO - Q: What is the Introduction of CacheBlend?
+2025-06-03 21:25:46,873 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.886
+2025-06-03 21:25:46,873 - INFO - Retrieval time: 1.07s, LLM time: 1.91s, Total: 2.98s
+2025-06-03 21:25:46,873 - INFO - I'm sorry, I couldn'...
+2025-06-03 21:25:46,873 - INFO - ========================================
+2025-06-03 21:25:48,048 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:48,844 - INFO - rag_db大小3========================================
+2025-06-03 21:25:48,844 - INFO - Q: What is the Conclusion of CacheBlend?
+2025-06-03 21:25:48,844 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.872
+2025-06-03 21:25:48,844 - INFO - Retrieval time: 1.16s, LLM time: 0.81s, Total: 1.97s
+2025-06-03 21:25:48,845 - INFO - I'm sorry, I couldn'...
+2025-06-03 21:25:48,845 - INFO - ========================================
+2025-06-03 21:25:50,844 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:52,146 - INFO - rag_db大小3========================================
+2025-06-03 21:25:52,146 - INFO - Q: What is the Abstract of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:25:52,146 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.898
+2025-06-03 21:25:52,146 - INFO - Retrieval time: 1.98s, LLM time: 1.32s, Total: 3.30s
+2025-06-03 21:25:52,146 - INFO - Metron is an NFV pla...
+2025-06-03 21:25:52,146 - INFO - ========================================
+2025-06-03 21:25:52,974 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:54,224 - INFO - rag_db大小3========================================
+2025-06-03 21:25:54,225 - INFO - Q: What is the Introduction of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:25:54,225 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.895
+2025-06-03 21:25:54,225 - INFO - Retrieval time: 0.80s, LLM time: 1.28s, Total: 2.08s
+2025-06-03 21:25:54,225 - INFO - Metron is an NFV pla...
+2025-06-03 21:25:54,225 - INFO - ========================================
+2025-06-03 21:25:55,082 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:56,190 - INFO - rag_db大小3========================================
+2025-06-03 21:25:56,190 - INFO - Q: What is the Conclusion of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:25:56,191 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.899
+2025-06-03 21:25:56,191 - INFO - Retrieval time: 0.83s, LLM time: 1.14s, Total: 1.97s
+2025-06-03 21:25:56,191 - INFO - Metron demonstrates ...
+2025-06-03 21:25:56,191 - INFO - ========================================
+2025-06-03 21:25:56,888 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:57,435 - INFO - rag_db大小3========================================
+2025-06-03 21:25:57,436 - INFO - Q: What is the Abstract of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:25:57,436 - INFO - Expected: vllm, Retrieved: vllm, Hit: True, Similarity: 0.900
+2025-06-03 21:25:57,436 - INFO - Retrieval time: 0.64s, LLM time: 0.60s, Total: 1.24s
+2025-06-03 21:25:57,436 - INFO - The content of the d...
+2025-06-03 21:25:57,436 - INFO - ========================================
+2025-06-03 21:25:57,880 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:58,445 - INFO - rag_db大小3========================================
+2025-06-03 21:25:58,445 - INFO - Q: What is the Introduction of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:25:58,446 - INFO - Expected: vllm, Retrieved: vllm, Hit: True, Similarity: 0.902
+2025-06-03 21:25:58,446 - INFO - Retrieval time: 0.39s, LLM time: 0.62s, Total: 1.01s
+2025-06-03 21:25:58,446 - INFO - The content of thedo...
+2025-06-03 21:25:58,446 - INFO - ========================================
+2025-06-03 21:25:58,740 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:25:59,342 - INFO - rag_db大小3========================================
+2025-06-03 21:25:59,342 - INFO - Q: What is the Conclusion of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:25:59,342 - INFO - Expected: vllm, Retrieved: vllm, Hit: True, Similarity: 0.899
+2025-06-03 21:25:59,342 - INFO - Retrieval time: 0.24s, LLM time: 0.66s, Total: 0.90s
+2025-06-03 21:25:59,342 - INFO - The content of thedo...
+2025-06-03 21:25:59,342 - INFO - ========================================
+2025-06-03 21:25:59,347 - INFO - rag_db大小3========================================
+2025-06-03 21:25:59,348 - INFO - RAG 检索准确率: 66.67%
+2025-06-03 21:25:59,348 - INFO - 平均检索时间: 0.807s
+2025-06-03 21:25:59,348 - INFO - 平均LLM时间: 1.121s
+2025-06-03 21:25:59,349 - INFO - 平均总延迟: 1.928s
+2025-06-03 21:25:59,349 - INFO - Building RAG DB, size = 7...
+2025-06-03 21:25:59,349 - INFO - Calculating document emb: sigcomm24-crux
+2025-06-03 21:26:01,056 - INFO - Calculating document emb: nsdi22-paper-reda_1
+2025-06-03 21:26:03,095 - INFO - Calculating document emb: osdi24-sun-biao
+2025-06-03 21:26:04,077 - INFO - Calculating document emb: ServerlessLLM_summary
+2025-06-03 21:26:05,545 - INFO - Calculating document emb: vllm
+2025-06-03 21:26:06,702 - INFO - Calculating document emb: metron-nsdi18
+2025-06-03 21:26:07,998 - INFO - RAG DB built successfully.
+2025-06-03 21:26:08,155 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:08,918 - INFO - rag_db大小7========================================
+2025-06-03 21:26:08,918 - INFO - Q: What is the Abstract of CacheBlend?
+2025-06-03 21:26:08,918 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.888
+2025-06-03 21:26:08,918 - INFO - Retrieval time: 0.10s, LLM time: 0.81s, Total: 0.92s
+2025-06-03 21:26:08,918 - INFO - The content of thedo...
+2025-06-03 21:26:08,918 - INFO - ========================================
+2025-06-03 21:26:09,105 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:09,759 - INFO - rag_db大小7========================================
+2025-06-03 21:26:09,759 - INFO - Q: What is the Introduction of CacheBlend?
+2025-06-03 21:26:09,759 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.886
+2025-06-03 21:26:09,760 - INFO - Retrieval time: 0.13s, LLM time: 0.71s, Total: 0.84s
+2025-06-03 21:26:09,760 - INFO - The content of thedo...
+2025-06-03 21:26:09,760 - INFO - ========================================
+2025-06-03 21:26:10,532 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:11,378 - INFO - rag_db大小7========================================
+2025-06-03 21:26:11,378 - INFO - Q: What is the Conclusion of CacheBlend?
+2025-06-03 21:26:11,378 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.872
+2025-06-03 21:26:11,379 - INFO - Retrieval time: 0.72s, LLM time: 0.90s, Total: 1.62s
+2025-06-03 21:26:11,379 - INFO - The content of thedo...
+2025-06-03 21:26:11,379 - INFO - ========================================
+2025-06-03 21:26:12,116 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:12,991 - INFO - rag_db大小7========================================
+2025-06-03 21:26:12,991 - INFO - Q: What is the Abstract of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:26:12,991 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.898
+2025-06-03 21:26:12,992 - INFO - Retrieval time: 0.67s, LLM time: 0.94s, Total: 1.61s
+2025-06-03 21:26:12,992 - INFO - The content of thedo...
+2025-06-03 21:26:12,992 - INFO - ========================================
+2025-06-03 21:26:13,418 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:14,396 - INFO - rag_db大小7========================================
+2025-06-03 21:26:14,396 - INFO - Q: What is the Introduction of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:26:14,396 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.895
+2025-06-03 21:26:14,396 - INFO - Retrieval time: 0.26s, LLM time: 1.14s, Total: 1.40s
+2025-06-03 21:26:14,397 - INFO - The content of thedo...
+2025-06-03 21:26:14,397 - INFO - ========================================
+2025-06-03 21:26:14,742 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:15,778 - INFO - rag_db大小7========================================
+2025-06-03 21:26:15,778 - INFO - Q: What is the Conclusion of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:26:15,778 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.899
+2025-06-03 21:26:15,778 - INFO - Retrieval time: 0.17s, LLM time: 1.21s, Total: 1.38s
+2025-06-03 21:26:15,778 - INFO - The content of thedo...
+2025-06-03 21:26:15,778 - INFO - ========================================
+2025-06-03 21:26:16,182 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:17,212 - INFO - rag_db大小7========================================
+2025-06-03 21:26:17,212 - INFO - Q: What is the Abstract of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:26:17,212 - INFO - Expected: vllm, Retrieved: sigcomm24-crux, Hit: False, Similarity: 0.908
+2025-06-03 21:26:17,213 - INFO - Retrieval time: 0.22s, LLM time: 1.22s, Total: 1.43s
+2025-06-03 21:26:17,213 - INFO - The content of thedo...
+2025-06-03 21:26:17,213 - INFO - ========================================
+2025-06-03 21:26:18,535 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:19,621 - INFO - rag_db大小7========================================
+2025-06-03 21:26:19,621 - INFO - Q: What is the Introduction of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:26:19,621 - INFO - Expected: vllm, Retrieved: sigcomm24-crux, Hit: False, Similarity: 0.908
+2025-06-03 21:26:19,621 - INFO - Retrieval time: 1.13s, LLM time: 1.28s, Total: 2.41s
+2025-06-03 21:26:19,621 - INFO - The content of thedo...
+2025-06-03 21:26:19,621 - INFO - ========================================
+2025-06-03 21:26:19,994 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:21,218 - INFO - rag_db大小7========================================
+2025-06-03 21:26:21,218 - INFO - Q: What is the Conclusion of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:26:21,218 - INFO - Expected: vllm, Retrieved: sigcomm24-crux, Hit: False, Similarity: 0.904
+2025-06-03 21:26:21,218 - INFO - Retrieval time: 0.21s, LLM time: 1.38s, Total: 1.60s
+2025-06-03 21:26:21,218 - INFO - The content of thedo...
+2025-06-03 21:26:21,218 - INFO - ========================================
+2025-06-03 21:26:21,222 - INFO - rag_db大小7========================================
+2025-06-03 21:26:21,222 - INFO - RAG 检索准确率: 33.33%
+2025-06-03 21:26:21,222 - INFO - 平均检索时间: 0.401s
+2025-06-03 21:26:21,223 - INFO - 平均LLM时间: 1.067s
+2025-06-03 21:26:21,223 - INFO - 平均总延迟: 1.468s
+2025-06-03 21:26:21,223 - INFO - Building RAG DB, size = 11...
+2025-06-03 21:26:21,223 - INFO - Calculating document emb: sigcomm24-crux
+2025-06-03 21:26:23,751 - INFO - Calculating document emb: nsdi22-paper-reda_1
+2025-06-03 21:26:24,749 - INFO - Calculating document emb: osdi24-sun-biao
+2025-06-03 21:26:25,727 - INFO - Calculating document emb: ServerlessLLM_summary
+2025-06-03 21:26:27,252 - INFO - Calculating document emb: aplomb-sigcomm12
+2025-06-03 21:26:29,117 - INFO - Calculating document emb: cacheblend
+2025-06-03 21:26:29,944 - INFO - Calculating document emb: click
+2025-06-03 21:26:31,598 - INFO - Calculating document emb: osdi24-agrawal
+2025-06-03 21:26:32,701 - INFO - Calculating document emb: vllm
+2025-06-03 21:26:34,071 - INFO - Calculating document emb: metron-nsdi18
+2025-06-03 21:26:35,007 - INFO - RAG DB built successfully.
+2025-06-03 21:26:35,341 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:36,764 - INFO - rag_db大小11========================================
+2025-06-03 21:26:36,765 - INFO - Q: What is the Abstract of CacheBlend?
+2025-06-03 21:26:36,765 - INFO - Expected: cacheblend, Retrieved: metron-nsdi18, Hit: False, Similarity: 0.888
+2025-06-03 21:26:36,765 - INFO - Retrieval time: 0.13s, LLM time: 1.63s, Total: 1.76s
+2025-06-03 21:26:36,765 - INFO - The content of thedo...
+2025-06-03 21:26:36,765 - INFO - ========================================
+2025-06-03 21:26:37,167 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:38,503 - INFO - rag_db大小11========================================
+2025-06-03 21:26:38,503 - INFO - Q: What is the Introduction of CacheBlend?
+2025-06-03 21:26:38,503 - INFO - Expected: cacheblend, Retrieved: aplomb-sigcomm12, Hit: False, Similarity: 0.891
+2025-06-03 21:26:38,503 - INFO - Retrieval time: 0.21s, LLM time: 1.53s, Total: 1.74s
+2025-06-03 21:26:38,503 - INFO - The content of thedo...
+2025-06-03 21:26:38,503 - INFO - ========================================
+2025-06-03 21:26:39,470 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:40,853 - INFO - rag_db大小11========================================
+2025-06-03 21:26:40,853 - INFO - Q: What is the Conclusion of CacheBlend?
+2025-06-03 21:26:40,853 - INFO - Expected: cacheblend, Retrieved: aplomb-sigcomm12, Hit: False, Similarity: 0.878
+2025-06-03 21:26:40,853 - INFO - Retrieval time: 0.73s, LLM time: 1.62s, Total: 2.35s
+2025-06-03 21:26:40,853 - INFO - The content of thedo...
+2025-06-03 21:26:40,853 - INFO - ========================================
+2025-06-03 21:26:41,263 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:42,749 - INFO - rag_db大小11========================================
+2025-06-03 21:26:42,749 - INFO - Q: What is the Abstract of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:26:42,749 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.898
+2025-06-03 21:26:42,749 - INFO - Retrieval time: 0.21s, LLM time: 1.69s, Total: 1.90s
+2025-06-03 21:26:42,750 - INFO - The content of thedo...
+2025-06-03 21:26:42,750 - INFO - ========================================
+2025-06-03 21:26:43,102 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:44,562 - INFO - rag_db大小11========================================
+2025-06-03 21:26:44,562 - INFO - Q: What is the Introduction of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:26:44,562 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.895
+2025-06-03 21:26:44,562 - INFO - Retrieval time: 0.15s, LLM time: 1.66s, Total: 1.81s
+2025-06-03 21:26:44,562 - INFO - The content of thedo...
+2025-06-03 21:26:44,562 - INFO - ========================================
+2025-06-03 21:26:44,901 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:46,370 - INFO - rag_db大小11========================================
+2025-06-03 21:26:46,370 - INFO - Q: What is the Conclusion of NFV Service Chains at the True Speed of the Underlying Hardware?
+2025-06-03 21:26:46,370 - INFO - Expected: metron-nsdi18, Retrieved: metron-nsdi18, Hit: True, Similarity: 0.899
+2025-06-03 21:26:46,370 - INFO - Retrieval time: 0.15s, LLM time: 1.66s, Total: 1.81s
+2025-06-03 21:26:46,370 - INFO - The content of thedo...
+2025-06-03 21:26:46,370 - INFO - ========================================
+2025-06-03 21:26:47,205 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:48,911 - INFO - rag_db大小11========================================
+2025-06-03 21:26:48,911 - INFO - Q: What is the Abstract of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:26:48,911 - INFO - Expected: vllm, Retrieved: sigcomm24-crux, Hit: False, Similarity: 0.908
+2025-06-03 21:26:48,912 - INFO - Retrieval time: 0.61s, LLM time: 1.93s, Total: 2.54s
+2025-06-03 21:26:48,912 - INFO - The content of thedo...
+2025-06-03 21:26:48,912 - INFO - ========================================
+2025-06-03 21:26:49,841 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:51,636 - INFO - rag_db大小11========================================
+2025-06-03 21:26:51,637 - INFO - Q: What is the Introduction of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:26:51,637 - INFO - Expected: vllm, Retrieved: sigcomm24-crux, Hit: False, Similarity: 0.908
+2025-06-03 21:26:51,637 - INFO - Retrieval time: 0.66s, LLM time: 2.06s, Total: 2.72s
+2025-06-03 21:26:51,637 - INFO - The content of thedo...
+2025-06-03 21:26:51,637 - INFO - ========================================
+2025-06-03 21:26:52,642 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:26:54,669 - INFO - rag_db大小11========================================
+2025-06-03 21:26:54,669 - INFO - Q: What is the Conclusion of Efficient Memory Management for Large Language Model Serving with PagedAttention?
+2025-06-03 21:26:54,669 - INFO - Expected: vllm, Retrieved: sigcomm24-crux, Hit: False, Similarity: 0.904
+2025-06-03 21:26:54,669 - INFO - Retrieval time: 0.73s, LLM time: 2.30s, Total: 3.03s
+2025-06-03 21:26:54,669 - INFO - The content of thedo...
+2025-06-03 21:26:54,670 - INFO - ========================================
+2025-06-03 21:26:54,673 - INFO - rag_db大小11========================================
+2025-06-03 21:26:54,673 - INFO - RAG 检索准确率: 33.33%
+2025-06-03 21:26:54,673 - INFO - 平均检索时间: 0.398s
+2025-06-03 21:26:54,674 - INFO - 平均LLM时间: 1.786s
+2025-06-03 21:26:54,674 - INFO - 平均总延迟: 2.184s
+2025-06-03 21:26:54,676 - INFO - Results saved to ./task3_result/task3_plot_data.json
+2025-06-03 21:26:54,957 - INFO - Plot saved to ./task3_result/task3_plot_acc.png
+2025-06-03 21:26:55,117 - INFO - Plot saved to ./task3_result/task3_plot_time.png

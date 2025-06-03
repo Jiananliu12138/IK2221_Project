@@ -1,0 +1,37 @@
+2025-06-03 21:28:20,195 - INFO - 
+===== Running Task 2 experiments with cache size: 0.2 =====
+2025-06-03 21:28:20,196 - INFO - Results will be saved to: task2_results/0.2
+2025-06-03 21:28:20,196 - INFO - Initializing with IP: 192.168.2.27, Port: 8000
+2025-06-03 21:28:20,290 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-06-03 21:28:20,294 - INFO - Chat session initialized successfully
+2025-06-03 21:28:20,294 - INFO - Loading contexts from directory: ../data
+2025-06-03 21:28:20,299 - INFO - Successfully loaded 15 contexts from ../data
+2025-06-03 21:28:20,299 - INFO - 
+===== Experiment 1: Scheduling Strategy Comparison =====
+2025-06-03 21:28:20,299 - INFO - 
+===== Comparing scheduling strategies =====
+2025-06-03 21:28:20,299 - INFO - 
+----- Running UNSCHEDULED batch -----
+2025-06-03 21:28:20,299 - INFO - 
+===== Starting batch experiment =====
+2025-06-03 21:28:20,299 - INFO - Batches: 2, Batch size: 10, Scheduled: False
+2025-06-03 21:28:20,300 - INFO - 
+----- Processing Batch 1/2 -----
+2025-06-03 21:28:20,316 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-06-03 21:28:20,317 - INFO - Chat session initialized successfully
+2025-06-03 21:28:20,317 - INFO - Processing batch of 10 requests (scheduled: False)
+2025-06-03 21:28:20,318 - INFO - Context switches in batch: 9
+2025-06-03 21:28:20,318 - INFO - Processing request 1/10 for context osdi24-agrawal
+2025-06-03 21:28:20,341 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:28:21,243 - INFO - Request completed in 0.93s, response length: 225 chars
+2025-06-03 21:28:21,243 - INFO - Processing request 2/10 for context click
+2025-06-03 21:28:21,278 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:28:22,468 - INFO - Request completed in 1.22s, response length: 344 chars
+2025-06-03 21:28:22,468 - INFO - Processing request 3/10 for context nsdi20-paper-barbette
+2025-06-03 21:28:22,508 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:28:24,354 - INFO - Request completed in 1.89s, response length: 520 chars
+2025-06-03 21:28:24,354 - INFO - Processing request 4/10 for context osdi24-lee
+2025-06-03 21:28:24,404 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:28:24,988 - INFO - Request completed in 0.63s, response length: 81 chars
+2025-06-03 21:28:24,988 - INFO - Processing request 5/10 for context nsdi22-paper-reda_1
+2025-06-03 21:28:25,042 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"

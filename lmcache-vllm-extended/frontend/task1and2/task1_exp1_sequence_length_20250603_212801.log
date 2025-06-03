@@ -1,0 +1,19 @@
+2025-06-03 21:28:01,596 - INFO - 
+===== Running Task 1 exp1_sequence_length with cache size: 0.2 =====
+2025-06-03 21:28:01,597 - INFO - Results will be saved to: task1_results/0.2
+2025-06-03 21:28:01,683 - INFO - HTTP Request: GET http://192.168.2.27:8000/v2/models "HTTP/1.1 200 OK"
+2025-06-03 21:28:01,684 - INFO - Chat session initialized successfully
+2025-06-03 21:28:01,684 - INFO - Loading contexts from directory: ../data
+2025-06-03 21:28:01,688 - INFO - Successfully loaded 15 contexts from ../data
+2025-06-03 21:28:01,688 - INFO - 
+===== Starting experiment: exp1_sequence_length =====
+2025-06-03 21:28:01,688 - INFO - Sending question for context sigcomm24-crux: 'What is the main topic of this...'
+2025-06-03 21:28:01,703 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:28:02,588 - INFO - Request completed in 0.90s, response length: 223 chars
+2025-06-03 21:28:02,588 - INFO - Request 1 - Context: sigcomm24-crux, Length: 3601, Latency: 0.90s, Throughput: 1.11 req/s
+2025-06-03 21:28:02,588 - INFO - Sending question for context nsdi22-paper-reda_1: 'What is the main topic of this...'
+2025-06-03 21:28:02,621 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
+2025-06-03 21:28:06,064 - INFO - Request completed in 3.48s, response length: 786 chars
+2025-06-03 21:28:06,065 - INFO - Request 2 - Context: nsdi22-paper-reda_1, Length: 3707, Latency: 3.48s, Throughput: 0.46 req/s
+2025-06-03 21:28:06,066 - INFO - Sending question for context osdi24-sun-biao: 'What is the main topic of this...'
+2025-06-03 21:28:06,113 - INFO - HTTP Request: POST http://192.168.2.27:8000/v2/chat/completions "HTTP/1.1 200 OK"
