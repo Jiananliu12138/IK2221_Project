@@ -60,7 +60,7 @@ for question, context_id in questions.items():
     })
 
 for req in requests:
-    # 构建输入（可拼接 system_prompt、context、question）
+    # 构建输入（可拼接 system_prompt、context、questifon）
     # input_text = system_prompt + "\n" + req["context"] + "\n" + req["question"]
     input_text = system_prompt  + "\n" + req["question"]
     inputs = tokenizer(input_text, return_tensors="pt")

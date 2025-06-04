@@ -10,7 +10,7 @@ def aggregate_kv_tensor(kv_tensor, method="mean"):
     method: "mean" 
     返回: 1D向量
     """
-    key_tensors = [k[0].cpu().numpy() for k in kv_tensor]  # 28个(1, 2, 709, 128)
+    key_tensors = [k[0].cpu().numpy() for k in kv_tensor]  # 28个(1, 2, 709, 128)：2个 attention 头 × 709个 token × 每个 token 是128维
     key_tensors = np.stack(key_tensors) #(28, 1, 2, 709, 128)
     if method == "mean":
         # 对所有层、头、token做平均
@@ -60,8 +60,8 @@ def kv_clustering_pipeline(kv_tensors, true_labels, n_clusters, agg_method="mean
     返回: ARI, NMI, 聚类标签
     """
     agg_vectors = np.stack([aggregate_kv_tensor(kv, method=agg_method) for kv in kv_tensors])#(9, 3584)
-    reduced_vectors = reduce_dim(agg_vectors)
-    cluster_labels = cluster_vectors(reduced_vectors, n_clusters)
+    reduced_vectors = reduce_dim(agg_vectors) #（9, 9） 每一行是一个请求的低维表示
+    cluster_labels = cluster_vectors(reduced_vectors, n_clusters) #(9,1)
     print(f"聚类标签: {cluster_labels} 真实标签: {true_labels}")
     ari, nmi = evaluate_clustering(true_labels, cluster_labels)
     return ari, nmi, cluster_labels

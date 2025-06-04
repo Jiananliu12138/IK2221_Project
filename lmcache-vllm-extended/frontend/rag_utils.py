@@ -18,7 +18,7 @@ def get_llm_embedding(text, model, tokenizer, device="cpu"):
 #生成rag_db数组
 def build_rag_db(docs, model, tokenizer, chunk_size=3):
     logging.info(f"Building RAG DB, size = {chunk_size}...")
-    required_keys = {"", "metron-nsdi18", "vllm"}  # 必须包含的键
+    required_keys = {"click", "metron-nsdi18", "vllm"}  # 必须包含的键
     if chunk_size < len(required_keys):
         logging.error("Chunk size must be greater than or equal to the number of required keys.")
     # 确保必须包含的键存在于 docs 中
